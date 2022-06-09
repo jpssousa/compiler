@@ -1,2 +1,2 @@
 # compiler
-Compilador Mgol para linguagem C, implementado em Python
+Compilador Mgol para linguagem C, implementado em Python.
