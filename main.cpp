@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include "lexical.hpp"
+#include "lexical/lexical.hpp"
 
 using namespace std;
 
@@ -18,7 +18,7 @@ bool check_source_file_extension(string file_name) {
 }
 
 string object_file_path(string file_name) {
-    if (!file_name.compare("")) {
+    if (!file_name.compare(string(""))) {
         cout << "No object target file provided. Writing on '" << DEFAULT_FILE << "'\n" ;
         return DEFAULT_FILE;
     }
@@ -34,8 +34,8 @@ string object_file_path(string file_name) {
 
 int main(int argc, char* argv[]) {
     ifstream fp;
-    string source_file = "";
-    string output_file = "";
+    string source_file = string("");
+    string output_file = string("");
 
     switch (argc) {
         case 2:
@@ -54,7 +54,9 @@ int main(int argc, char* argv[]) {
             return 0;
     }
 
-
+    // Lexical *lex = new Lexical(source_file);
+    Lexical lex(source_file);
+    lex.Scanner();
 
     return 0;
 }

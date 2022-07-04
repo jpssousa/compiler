@@ -1,5 +1,10 @@
+#ifndef LEXICAL_HPP
+#define LEXICAL_HPP
+
 #include<string>
 #include<vector>
+#include<fstream>
+#include<iostream>
 
 using namespace std;
 
@@ -33,10 +38,10 @@ enum Classe {
 };
 
 enum Tipo {
-    INTEIRO,
-    REAL,
-    LITERAL,
-    NULO
+    INTEIRO_T,
+    REAL_T,
+    LITERAL_T,
+    NULO_T
 };
 
 typedef struct token {
@@ -46,5 +51,19 @@ typedef struct token {
 } token_t;
 
 class Lexical {
+public:
+    fstream fp;
+    int line;
+    int column;
+    vector<char> alfabeto;
 
+    Lexical(string file_path);
+
+    ~Lexical();
+
+    token_t Scanner();
+
+    vector<char> gerar_alfabeto();
 };
+
+#endif
