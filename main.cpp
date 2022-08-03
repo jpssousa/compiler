@@ -1,6 +1,5 @@
 #include "main.hpp"
 
-
 const string ALG_EXTENSION = string(".alg");
 const string C_EXTENSION = string(".c");
 const string DEFAULT_FILE = string("alg.c");
