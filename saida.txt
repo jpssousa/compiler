@@ -1,0 +1,138 @@
+No object target file provided. Writing on 'alg.c'
+Classe: inicio | Lexema: inicio | Tipo: inicio
+Classe: varinicio | Lexema: varinicio | Tipo: varinicio
+Classe: literal | Lexema: literal | Tipo: NULO
+Classe: id | Lexema: A | Tipo: NULO
+Classe: VIR | Lexema: , | Tipo: NULO
+Classe: id | Lexema: B | Tipo: NULO
+Classe: PT_V | Lexema: ; | Tipo: NULO
+Classe: inteiro | Lexema: inteiro | Tipo: NULO
+Classe: id | Lexema: B | Tipo: NULO
+Classe: PT_V | Lexema: ; | Tipo: NULO
+Classe: inteiro | Lexema: inteiro | Tipo: NULO
+Classe: id | Lexema: D | Tipo: NULO
+Classe: PT_V | Lexema: ; | Tipo: NULO
+Classe: real | Lexema: real | Tipo: NULO
+Classe: id | Lexema: C | Tipo: NULO
+Classe: PT_V | Lexema: ; | Tipo: NULO
+Classe: varfim | Lexema: varfim | Tipo: varfim
+Classe: PT_V | Lexema: ; | Tipo: NULO
+Classe: escreva | Lexema: escreva | Tipo: escreva
+Classe: LIT | Lexema: "Digite B:" | Tipo: NULO
+Classe: PT_V | Lexema: ; | Tipo: NULO
+Classe: leia | Lexema: leia | Tipo: leia
+Classe: id | Lexema: B | Tipo: NULO
+Classe: PT_V | Lexema: ; | Tipo: NULO
+Classe: escreva | Lexema: escreva | Tipo: escreva
+Classe: LIT | Lexema: "Digite A:" | Tipo: NULO
+Classe: PT_V | Lexema: ; | Tipo: NULO
+Classe: leia | Lexema: leia | Tipo: leia
+Classe: id | Lexema: A | Tipo: NULO
+Classe: PT_V | Lexema: ; | Tipo: NULO
+Classe: se | Lexema: se | Tipo: se
+Classe: AB_P | Lexema: ( | Tipo: NULO
+Classe: id | Lexema: B | Tipo: NULO
+Classe: OPR | Lexema: > | Tipo: NULO
+Classe: NUM | Lexema: 2 | Tipo: inteiro
+Classe: FC_P | Lexema: ) | Tipo: NULO
+Classe: entao | Lexema: entao | Tipo: entao
+Classe: se | Lexema: se | Tipo: se
+Classe: AB_P | Lexema: ( | Tipo: NULO
+Classe: id | Lexema: B | Tipo: NULO
+Classe: OPR | Lexema: <= | Tipo: NULO
+Classe: NUM | Lexema: 4 | Tipo: inteiro
+Classe: FC_P | Lexema: ) | Tipo: NULO
+Classe: entao | Lexema: entao | Tipo: entao
+Classe: escreva | Lexema: escreva | Tipo: escreva
+Classe: LIT | Lexema: "B esta entre 2 e 4" | Tipo: NULO
+Classe: PT_V | Lexema: ; | Tipo: NULO
+Classe: fimse | Lexema: fimse | Tipo: fimse
+Classe: fimse | Lexema: fimse | Tipo: fimse
+Classe: id | Lexema: B | Tipo: NULO
+Classe: RCB | Lexema: <- | Tipo: NULO
+Classe: id | Lexema: B | Tipo: NULO
+Classe: OPM | Lexema: + | Tipo: NULO
+Classe: NUM | Lexema: 1 | Tipo: inteiro
+Classe: PT_V | Lexema: ; | Tipo: NULO
+Classe: id | Lexema: B | Tipo: NULO
+Classe: RCB | Lexema: <- | Tipo: NULO
+Classe: id | Lexema: B | Tipo: NULO
+Classe: OPM | Lexema: + | Tipo: NULO
+Classe: NUM | Lexema: 2 | Tipo: inteiro
+Classe: PT_V | Lexema: ; | Tipo: NULO
+Classe: id | Lexema: B | Tipo: NULO
+Classe: RCB | Lexema: <- | Tipo: NULO
+Classe: id | Lexema: B | Tipo: NULO
+Classe: OPM | Lexema: + | Tipo: NULO
+Classe: NUM | Lexema: 3 | Tipo: inteiro
+Classe: PT_V | Lexema: ; | Tipo: NULO
+Classe: id | Lexema: D | Tipo: NULO
+Classe: RCB | Lexema: <- | Tipo: NULO
+Classe: id | Lexema: B | Tipo: NULO
+Classe: PT_V | Lexema: ; | Tipo: NULO
+Classe: id | Lexema: C | Tipo: NULO
+Classe: RCB | Lexema: <- | Tipo: NULO
+Classe: NUM | Lexema: 5.0 | Tipo: real
+Classe: PT_V | Lexema: ; | Tipo: NULO
+Classe: repita | Lexema: repita | Tipo: repita
+Classe: AB_P | Lexema: ( | Tipo: NULO
+Classe: id | Lexema: B | Tipo: NULO
+Classe: OPR | Lexema: < | Tipo: NULO
+Classe: NUM | Lexema: 5 | Tipo: inteiro
+Classe: FC_P | Lexema: ) | Tipo: NULO
+Classe: id | Lexema: C | Tipo: NULO
+Classe: RCB | Lexema: <- | Tipo: NULO
+Classe: id | Lexema: B | Tipo: NULO
+Classe: OPM | Lexema: + | Tipo: NULO
+Classe: NUM | Lexema: 2 | Tipo: inteiro
+Classe: PT_V | Lexema: ; | Tipo: NULO
+Classe: escreva | Lexema: escreva | Tipo: escreva
+Classe: id | Lexema: C | Tipo: NULO
+Classe: PT_V | Lexema: ; | Tipo: NULO
+Classe: id | Lexema: B | Tipo: NULO
+Classe: RCB | Lexema: <- | Tipo: NULO
+Classe: id | Lexema: B | Tipo: NULO
+Classe: OPM | Lexema: + | Tipo: NULO
+Classe: NUM | Lexema: 1 | Tipo: inteiro
+Classe: PT_V | Lexema: ; | Tipo: NULO
+Classe: fimrepita | Lexema: fimrepita | Tipo: fimrepita
+Classe: escreva | Lexema: escreva | Tipo: escreva
+Classe: LIT | Lexema: "\nB=\n" | Tipo: NULO
+Classe: PT_V | Lexema: ; | Tipo: NULO
+Classe: escreva | Lexema: escreva | Tipo: escreva
+Classe: id | Lexema: D | Tipo: NULO
+Classe: PT_V | Lexema: ; | Tipo: NULO
+Classe: escreva | Lexema: escreva | Tipo: escreva
+Classe: LIT | Lexema: "\n" | Tipo: NULO
+Classe: PT_V | Lexema: ; | Tipo: NULO
+Classe: escreva | Lexema: escreva | Tipo: escreva
+Classe: id | Lexema: C | Tipo: NULO
+Classe: PT_V | Lexema: ; | Tipo: NULO
+Classe: escreva | Lexema: escreva | Tipo: escreva
+Classe: LIT | Lexema: "\n" | Tipo: NULO
+Classe: PT_V | Lexema: ; | Tipo: NULO
+Classe: escreva | Lexema: escreva | Tipo: escreva
+Classe: id | Lexema: A | Tipo: NULO
+Classe: PT_V | Lexema: ; | Tipo: NULO
+Classe: fim | Lexema: fim | Tipo: fim
+Classe: EOF | Lexema: EOF | Tipo: NULO
+
+	 Tabela de símbolos:
+key[A]: Classe: id | Lexema: A | Tipo: NULO
+key[B]: Classe: id | Lexema: B | Tipo: NULO
+key[C]: Classe: id | Lexema: C | Tipo: NULO
+key[D]: Classe: id | Lexema: D | Tipo: NULO
+key[entao]: Classe: entao | Lexema: entao | Tipo: entao
+key[escreva]: Classe: escreva | Lexema: escreva | Tipo: escreva
+key[fim]: Classe: fim | Lexema: fim | Tipo: fim
+key[fimrepita]: Classe: fimrepita | Lexema: fimrepita | Tipo: fimrepita
+key[fimse]: Classe: fimse | Lexema: fimse | Tipo: fimse
+key[inicio]: Classe: inicio | Lexema: inicio | Tipo: inicio
+key[inteiro]: Classe: inteiro | Lexema: inteiro | Tipo: NULO
+key[leia]: Classe: leia | Lexema: leia | Tipo: leia
+key[literal]: Classe: literal | Lexema: literal | Tipo: NULO
+key[real]: Classe: real | Lexema: real | Tipo: NULO
+key[repita]: Classe: repita | Lexema: repita | Tipo: repita
+key[se]: Classe: se | Lexema: se | Tipo: se
+key[varfim]: Classe: varfim | Lexema: varfim | Tipo: varfim
+key[varinicio]: Classe: varinicio | Lexema: varinicio | Tipo: varinicio

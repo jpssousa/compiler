@@ -1,0 +1,9 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "files.associations": {
+        "iosfwd": "cpp",
+        "limits": "cpp",
+        "string": "cpp",
+        "set": "cpp"
+    }
+}
