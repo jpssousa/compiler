@@ -1,7 +1,7 @@
 #ifndef DFA_HPP
 #define DFA_HPP
 
-#include "common.hpp"
+#include "../common.hpp"
 
 enum DFA_State {
     Initial, // estado inicial aceita qualquer símbolo do alfabeto da linguagem

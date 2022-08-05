@@ -4,11 +4,11 @@ target: common.o dfa.o lexical.o main.o
 common.o: common.hpp common.cpp
 	g++ -Wall -std=c++14 -c common.cpp
 
-dfa.o: dfa.hpp dfa.cpp
-	g++ -Wall -std=c++14 -c dfa.cpp
+dfa.o: lexical/dfa.hpp lexical/dfa.cpp
+	g++ -Wall -std=c++14 -c lexical/dfa.cpp
 
-lexical.o: lexical.hpp lexical.cpp
-	g++ -Wall -std=c++14 -c lexical.cpp
+lexical.o: lexical/lexical.hpp lexical/lexical.cpp
+	g++ -Wall -std=c++14 -c lexical/lexical.cpp
 
 main.o: main.hpp main.cpp
 	g++ -Wall -std=c++14 -c main.cpp

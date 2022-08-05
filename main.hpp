@@ -4,7 +4,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include "lexical.hpp"
+#include "lexical/lexical.hpp"
 #include "common.hpp"
 
 using namespace std;
