@@ -18,13 +18,13 @@ Classe: PT_V | Lexema: ; | Tipo: NULO
 Classe: varfim | Lexema: varfim | Tipo: varfim
 Classe: PT_V | Lexema: ; | Tipo: NULO
 Classe: escreva | Lexema: escreva | Tipo: escreva
-Classe: LIT | Lexema: "Digite B:" | Tipo: NULO
+Classe: LIT | Lexema: "Digite B:" | Tipo: literal
 Classe: PT_V | Lexema: ; | Tipo: NULO
 Classe: leia | Lexema: leia | Tipo: leia
 Classe: id | Lexema: B | Tipo: NULO
 Classe: PT_V | Lexema: ; | Tipo: NULO
 Classe: escreva | Lexema: escreva | Tipo: escreva
-Classe: LIT | Lexema: "Digite A:" | Tipo: NULO
+Classe: LIT | Lexema: "Digite A:" | Tipo: literal
 Classe: PT_V | Lexema: ; | Tipo: NULO
 Classe: leia | Lexema: leia | Tipo: leia
 Classe: id | Lexema: A | Tipo: NULO
@@ -44,7 +44,7 @@ Classe: NUM | Lexema: 4 | Tipo: inteiro
 Classe: FC_P | Lexema: ) | Tipo: NULO
 Classe: entao | Lexema: entao | Tipo: entao
 Classe: escreva | Lexema: escreva | Tipo: escreva
-Classe: LIT | Lexema: "B esta entre 2 e 4" | Tipo: NULO
+Classe: LIT | Lexema: "B esta entre 2 e 4" | Tipo: literal
 Classe: PT_V | Lexema: ; | Tipo: NULO
 Classe: fimse | Lexema: fimse | Tipo: fimse
 Classe: fimse | Lexema: fimse | Tipo: fimse
@@ -97,19 +97,19 @@ Classe: NUM | Lexema: 1 | Tipo: inteiro
 Classe: PT_V | Lexema: ; | Tipo: NULO
 Classe: fimrepita | Lexema: fimrepita | Tipo: fimrepita
 Classe: escreva | Lexema: escreva | Tipo: escreva
-Classe: LIT | Lexema: "\nB=\n" | Tipo: NULO
+Classe: LIT | Lexema: "\nB=\n" | Tipo: literal
 Classe: PT_V | Lexema: ; | Tipo: NULO
 Classe: escreva | Lexema: escreva | Tipo: escreva
 Classe: id | Lexema: D | Tipo: NULO
 Classe: PT_V | Lexema: ; | Tipo: NULO
 Classe: escreva | Lexema: escreva | Tipo: escreva
-Classe: LIT | Lexema: "\n" | Tipo: NULO
+Classe: LIT | Lexema: "\n" | Tipo: literal
 Classe: PT_V | Lexema: ; | Tipo: NULO
 Classe: escreva | Lexema: escreva | Tipo: escreva
 Classe: id | Lexema: C | Tipo: NULO
 Classe: PT_V | Lexema: ; | Tipo: NULO
 Classe: escreva | Lexema: escreva | Tipo: escreva
-Classe: LIT | Lexema: "\n" | Tipo: NULO
+Classe: LIT | Lexema: "\n" | Tipo: literal
 Classe: PT_V | Lexema: ; | Tipo: NULO
 Classe: escreva | Lexema: escreva | Tipo: escreva
 Classe: id | Lexema: A | Tipo: NULO

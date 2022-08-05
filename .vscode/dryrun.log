@@ -1,10 +1,5 @@
-make --dry-run --always-make --keep-going --print-directory
+make --dry-run --keep-going --print-directory
 make: Entering directory `/Users/jsousa/ufg/compiladores/projeto/lexico'
-g++ -Wall -std=c++14 -c common.cpp
- 
-g++ -Wall -std=c++14 -c dfa.cpp
- 
-g++ -Wall -std=c++14 -c lexical.cpp
  
 g++ -Wall -std=c++14 -c main.cpp
 g++ -Wall -std=c++14 common.o dfa.o lexical.o main.o -o main

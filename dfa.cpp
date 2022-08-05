@@ -186,7 +186,10 @@ DFA_State DFA::transition(char c) {
 
     case DFA_State::Lit_state:
         token.classe = Classe::Lit;
-        if (c == '\"') return DFA_State::Accepted;
+        if (c == '\"') {
+            token.tipo = Tipo::LITERAL;
+            return DFA_State::Accepted;
+        }
         return DFA_State::Lit_state;
 
     case DFA_State::R_LesT:
