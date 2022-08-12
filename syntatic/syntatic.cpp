@@ -165,9 +165,10 @@ void Syntactic::analyze() {
     Lexical lex(file_path);
     token tkn;
 
+    tkn = lex.scanner();
     do {
-        tkn = lex.scanner();
-        tkn.print();
+        // tkn = lex.scanner();
+        // tkn.print();
         currState = st.top();
         printf("curState: %d ", currState);
 
@@ -175,6 +176,8 @@ void Syntactic::analyze() {
         if (currAction.first == Action::shift) {
             printf("push shift: %d\n", currAction.second);
             st.push(currAction.second);
+            tkn = lex.scanner();
+            tkn.print();
             continue;
         }
         else if (currAction.first == Action::reduce) {
@@ -186,6 +189,7 @@ void Syntactic::analyze() {
             }
             int t = st.top();
             printf("\ntop: %d\n", t);
+            printf("push: %d\n", gotos[t][rules[currAction.second].alpha]);
             st.push(gotos[t][rules[currAction.second].alpha]);
 
             // for (int i = 0; i < rules[currAction.second].second; i++) {
@@ -205,6 +209,7 @@ void Syntactic::analyze() {
         } else {
             printf("Erro sintático: linha %d, coluna %d.\n", lex.line, lex.column);
             // tkn.print();
+            break;
         }
     } while (tkn.classe != Classe::Eof);
 

@@ -231,7 +231,6 @@ CPR -> fimrepita
 alpha: CPR | rhs_size: 1
 A -> fim
 alpha: A | rhs_size: 1
-Classe: inicio | Lexema: inicio | Tipo: inicio
 curState: 0 push shift: 2
 Classe: varinicio | Lexema: varinicio | Tipo: varinicio
 curState: 2 push shift: 4
@@ -242,241 +241,558 @@ curState: 24 reduce: 10
 rule: TIPO -> literal
  pop: 24 
 top: 4
-Classe: VIR | Lexema: , | Tipo: NULO
-curState: 21 Erro sintático: linha 3, coluna 19.
-Classe: id | Lexema: B | Tipo: NULO
+push: 21
 curState: 21 push shift: 50
+Classe: VIR | Lexema: , | Tipo: NULO
+curState: 50 push shift: 67
+Classe: id | Lexema: B | Tipo: NULO
+curState: 67 push shift: 50
 Classe: PT_V | Lexema: ; | Tipo: NULO
 curState: 50 reduce: 7
 rule: L -> id
  pop: 50 
+top: 67
+push: 73
+curState: 73 reduce: 6
+rule: L -> id vir L
+ pop: 73  pop: 67  pop: 50 
 top: 21
-Classe: inteiro | Lexema: inteiro | Tipo: NULO
-curState: 49 Erro sintático: linha 4, coluna 16.
-Classe: id | Lexema: B | Tipo: NULO
-curState: 49 Erro sintático: linha 4, coluna 18.
-Classe: PT_V | Lexema: ; | Tipo: NULO
+push: 49
 curState: 49 push shift: 66
 Classe: inteiro | Lexema: inteiro | Tipo: NULO
 curState: 66 reduce: 5
 rule: D -> TIPO L ptv
  pop: 66  pop: 49  pop: 21 
 top: 4
-Classe: id | Lexema: D | Tipo: NULO
-curState: 19 Erro sintático: linha 5, coluna 18.
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 19 Erro sintático: linha 5, coluna 19.
-Classe: real | Lexema: real | Tipo: NULO
-curState: 19 push shift: 23
-Classe: id | Lexema: C | Tipo: NULO
-curState: 23 reduce: 9
-rule: TIPO -> real
- pop: 23 
-top: 19
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 21 Erro sintático: linha 6, coluna 17.
-Classe: varfim | Lexema: varfim | Tipo: varfim
-curState: 21 Erro sintático: linha 7, coluna 11.
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 21 Erro sintático: linha 7, coluna 12.
-Classe: escreva | Lexema: escreva | Tipo: escreva
-curState: 21 Erro sintático: linha 8, coluna 12.
-Classe: LIT | Lexema: "Digite B:" | Tipo: literal
-curState: 21 Erro sintático: linha 8, coluna 24.
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 21 Erro sintático: linha 8, coluna 25.
-Classe: leia | Lexema: leia | Tipo: leia
-curState: 21 Erro sintático: linha 9, coluna 9.
+push: 19
+curState: 19 push shift: 22
 Classe: id | Lexema: B | Tipo: NULO
+curState: 22 reduce: 8
+rule: TIPO -> inteiro
+ pop: 22 
+top: 19
+push: 21
 curState: 21 push shift: 50
 Classe: PT_V | Lexema: ; | Tipo: NULO
 curState: 50 reduce: 7
 rule: L -> id
  pop: 50 
 top: 21
-Classe: escreva | Lexema: escreva | Tipo: escreva
-curState: 49 Erro sintático: linha 10, coluna 12.
-Classe: LIT | Lexema: "Digite A:" | Tipo: literal
-curState: 49 Erro sintático: linha 10, coluna 24.
-Classe: PT_V | Lexema: ; | Tipo: NULO
+push: 49
 curState: 49 push shift: 66
+Classe: inteiro | Lexema: inteiro | Tipo: NULO
+curState: 66 reduce: 5
+rule: D -> TIPO L ptv
+ pop: 66  pop: 49  pop: 21 
+top: 19
+push: 19
+curState: 19 push shift: 22
+Classe: id | Lexema: D | Tipo: NULO
+curState: 22 reduce: 8
+rule: TIPO -> inteiro
+ pop: 22 
+top: 19
+push: 21
+curState: 21 push shift: 50
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 50 reduce: 7
+rule: L -> id
+ pop: 50 
+top: 21
+push: 49
+curState: 49 push shift: 66
+Classe: real | Lexema: real | Tipo: NULO
+curState: 66 reduce: 5
+rule: D -> TIPO L ptv
+ pop: 66  pop: 49  pop: 21 
+top: 19
+push: 19
+curState: 19 push shift: 23
+Classe: id | Lexema: C | Tipo: NULO
+curState: 23 reduce: 9
+rule: TIPO -> real
+ pop: 23 
+top: 19
+push: 21
+curState: 21 push shift: 50
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 50 reduce: 7
+rule: L -> id
+ pop: 50 
+top: 21
+push: 49
+curState: 49 push shift: 66
+Classe: varfim | Lexema: varfim | Tipo: varfim
+curState: 66 reduce: 5
+rule: D -> TIPO L ptv
+ pop: 66  pop: 49  pop: 21 
+top: 19
+push: 19
+curState: 19 push shift: 20
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 20 push shift: 48
+Classe: escreva | Lexema: escreva | Tipo: escreva
+curState: 48 reduce: 4
+rule: LV -> varfim ptv
+ pop: 48  pop: 20 
+top: 19
+push: 47
+curState: 47 reduce: 3
+rule: LV -> D LV
+ pop: 47  pop: 19 
+top: 19
+push: 47
+curState: 47 reduce: 3
+rule: LV -> D LV
+ pop: 47  pop: 19 
+top: 19
+push: 47
+curState: 47 reduce: 3
+rule: LV -> D LV
+ pop: 47  pop: 19 
+top: 19
+push: 47
+curState: 47 reduce: 3
+rule: LV -> D LV
+ pop: 47  pop: 19 
+top: 4
+push: 18
+curState: 18 reduce: 2
+rule: V -> varinicio LV
+ pop: 18  pop: 4 
+top: 2
+push: 3
+curState: 3 push shift: 12
+Classe: LIT | Lexema: "Digite B:" | Tipo: literal
+curState: 12 push shift: 31
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 31 reduce: 14
+rule: ARG -> lit
+ pop: 31 
+top: 12
+push: 30
+curState: 30 push shift: 52
 Classe: leia | Lexema: leia | Tipo: leia
-curState: 66 Erro sintático: linha 11, coluna 9.
-Classe: id | Lexema: A | Tipo: NULO
-curState: 66 Erro sintático: linha 11, coluna 11.
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 66 Erro sintático: linha 11, coluna 12.
-Classe: se | Lexema: se | Tipo: se
-curState: 66 Erro sintático: linha 12, coluna 7.
-Classe: AB_P | Lexema: ( | Tipo: NULO
-curState: 66 Erro sintático: linha 12, coluna 8.
+curState: 52 reduce: 13
+rule: ES -> escreva ARG ptv
+ pop: 52  pop: 30  pop: 12 
+top: 3
+push: 6
+curState: 6 push shift: 11
 Classe: id | Lexema: B | Tipo: NULO
-curState: 66 Erro sintático: linha 12, coluna 9.
+curState: 11 push shift: 29
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 29 push shift: 51
+Classe: escreva | Lexema: escreva | Tipo: escreva
+curState: 51 reduce: 12
+rule: ES -> leia id ptv
+ pop: 51  pop: 29  pop: 11 
+top: 6
+push: 6
+curState: 6 push shift: 12
+Classe: LIT | Lexema: "Digite A:" | Tipo: literal
+curState: 12 push shift: 31
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 31 reduce: 14
+rule: ARG -> lit
+ pop: 31 
+top: 12
+push: 30
+curState: 30 push shift: 52
+Classe: leia | Lexema: leia | Tipo: leia
+curState: 52 reduce: 13
+rule: ES -> escreva ARG ptv
+ pop: 52  pop: 30  pop: 12 
+top: 6
+push: 6
+curState: 6 push shift: 11
+Classe: id | Lexema: A | Tipo: NULO
+curState: 11 push shift: 29
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 29 push shift: 51
+Classe: se | Lexema: se | Tipo: se
+curState: 51 reduce: 12
+rule: ES -> leia id ptv
+ pop: 51  pop: 29  pop: 11 
+top: 6
+push: 6
+curState: 6 push shift: 16
+Classe: AB_P | Lexema: ( | Tipo: NULO
+curState: 16 push shift: 45
+Classe: id | Lexema: B | Tipo: NULO
+curState: 45 push shift: 55
 Classe: OPR | Lexema: > | Tipo: NULO
-curState: 66 Erro sintático: linha 12, coluna 10.
+curState: 55 reduce: 21
+rule: OPRD -> id
+ pop: 55 
+top: 45
+push: 64
+curState: 64 push shift: 71
 Classe: NUM | Lexema: 2 | Tipo: inteiro
-curState: 66 Erro sintático: linha 12, coluna 11.
+curState: 71 push shift: 56
 Classe: FC_P | Lexema: ) | Tipo: NULO
-curState: 66 Erro sintático: linha 12, coluna 12.
+curState: 56 reduce: 22
+rule: OPRD -> num
+ pop: 56 
+top: 71
+push: 76
+curState: 76 reduce: 26
+rule: EXP_R -> OPRD opr OPRD
+ pop: 76  pop: 71  pop: 64 
+top: 45
+push: 63
+curState: 63 push shift: 70
 Classe: entao | Lexema: entao | Tipo: entao
-curState: 66 Erro sintático: linha 13, coluna 10.
+curState: 70 push shift: 75
 Classe: se | Lexema: se | Tipo: se
-curState: 66 Erro sintático: linha 14, coluna 11.
+curState: 75 reduce: 25
+rule: CAB -> se abp EXP_R fcp entao
+ pop: 75  pop: 70  pop: 63  pop: 45  pop: 16 
+top: 6
+push: 14
+curState: 14 push shift: 16
 Classe: AB_P | Lexema: ( | Tipo: NULO
-curState: 66 Erro sintático: linha 14, coluna 12.
+curState: 16 push shift: 45
 Classe: id | Lexema: B | Tipo: NULO
-curState: 66 Erro sintático: linha 14, coluna 13.
+curState: 45 push shift: 55
 Classe: OPR | Lexema: <= | Tipo: NULO
-curState: 66 Erro sintático: linha 14, coluna 15.
+curState: 55 reduce: 21
+rule: OPRD -> id
+ pop: 55 
+top: 45
+push: 64
+curState: 64 push shift: 71
 Classe: NUM | Lexema: 4 | Tipo: inteiro
-curState: 66 Erro sintático: linha 14, coluna 16.
+curState: 71 push shift: 56
 Classe: FC_P | Lexema: ) | Tipo: NULO
-curState: 66 Erro sintático: linha 14, coluna 17.
+curState: 56 reduce: 22
+rule: OPRD -> num
+ pop: 56 
+top: 71
+push: 76
+curState: 76 reduce: 26
+rule: EXP_R -> OPRD opr OPRD
+ pop: 76  pop: 71  pop: 64 
+top: 45
+push: 63
+curState: 63 push shift: 70
 Classe: entao | Lexema: entao | Tipo: entao
-curState: 66 Erro sintático: linha 15, coluna 14.
+curState: 70 push shift: 75
 Classe: escreva | Lexema: escreva | Tipo: escreva
-curState: 66 Erro sintático: linha 16, coluna 20.
+curState: 75 reduce: 25
+rule: CAB -> se abp EXP_R fcp entao
+ pop: 75  pop: 70  pop: 63  pop: 45  pop: 16 
+top: 14
+push: 14
+curState: 14 push shift: 12
 Classe: LIT | Lexema: "B esta entre 2 e 4" | Tipo: literal
-curState: 66 Erro sintático: linha 16, coluna 41.
+curState: 12 push shift: 31
 Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 66 Erro sintático: linha 16, coluna 42.
+curState: 31 reduce: 14
+rule: ARG -> lit
+ pop: 31 
+top: 12
+push: 30
+curState: 30 push shift: 52
 Classe: fimse | Lexema: fimse | Tipo: fimse
-curState: 66 Erro sintático: linha 17, coluna 14.
+curState: 52 reduce: 13
+rule: ES -> escreva ARG ptv
+ pop: 52  pop: 30  pop: 12 
+top: 14
+push: 36
+curState: 36 push shift: 39
 Classe: fimse | Lexema: fimse | Tipo: fimse
-curState: 66 Erro sintático: linha 18, coluna 10.
+curState: 39 reduce: 30
+rule: CP -> fimse
+ pop: 39 
+top: 36
+push: 57
+curState: 57 reduce: 27
+rule: CP -> ES CP
+ pop: 57  pop: 36 
+top: 14
+push: 35
+curState: 35 reduce: 24
+rule: COND -> CAB CP
+ pop: 35  pop: 14 
+top: 14
+push: 38
+curState: 38 push shift: 39
 Classe: id | Lexema: B | Tipo: NULO
-curState: 66 Erro sintático: linha 19, coluna 6.
+curState: 39 reduce: 30
+rule: CP -> fimse
+ pop: 39 
+top: 38
+push: 59
+curState: 59 reduce: 29
+rule: CP -> COND CP
+ pop: 59  pop: 38 
+top: 14
+push: 35
+curState: 35 reduce: 24
+rule: COND -> CAB CP
+ pop: 35  pop: 14 
+top: 6
+push: 8
+curState: 8 push shift: 13
 Classe: RCB | Lexema: <- | Tipo: NULO
-curState: 66 Erro sintático: linha 19, coluna 8.
+curState: 13 push shift: 34
 Classe: id | Lexema: B | Tipo: NULO
-curState: 66 Erro sintático: linha 19, coluna 9.
+curState: 34 push shift: 55
 Classe: OPM | Lexema: + | Tipo: NULO
-curState: 66 Erro sintático: linha 19, coluna 10.
+curState: 55 reduce: 21
+rule: OPRD -> id
+ pop: 55 
+top: 34
+push: 54
+curState: 54 push shift: 69
 Classe: NUM | Lexema: 1 | Tipo: inteiro
-curState: 66 Erro sintático: linha 19, coluna 11.
+curState: 69 push shift: 56
 Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 66 Erro sintático: linha 19, coluna 12.
+curState: 56 reduce: 22
+rule: OPRD -> num
+ pop: 56 
+top: 69
+push: 74
+curState: 74 reduce: 19
+rule: LD -> OPRD opm OPRD
+ pop: 74  pop: 69  pop: 54 
+top: 34
+push: 53
+curState: 53 push shift: 68
 Classe: id | Lexema: B | Tipo: NULO
-curState: 66 Erro sintático: linha 20, coluna 6.
+curState: 68 reduce: 18
+rule: CMD -> id rcb LD ptv
+ pop: 68  pop: 53  pop: 34  pop: 13 
+top: 8
+push: 7
+curState: 7 push shift: 13
 Classe: RCB | Lexema: <- | Tipo: NULO
-curState: 66 Erro sintático: linha 20, coluna 8.
+curState: 13 push shift: 34
 Classe: id | Lexema: B | Tipo: NULO
-curState: 66 Erro sintático: linha 20, coluna 9.
+curState: 34 push shift: 55
 Classe: OPM | Lexema: + | Tipo: NULO
-curState: 66 Erro sintático: linha 20, coluna 10.
+curState: 55 reduce: 21
+rule: OPRD -> id
+ pop: 55 
+top: 34
+push: 54
+curState: 54 push shift: 69
 Classe: NUM | Lexema: 2 | Tipo: inteiro
-curState: 66 Erro sintático: linha 20, coluna 11.
+curState: 69 push shift: 56
 Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 66 Erro sintático: linha 20, coluna 12.
+curState: 56 reduce: 22
+rule: OPRD -> num
+ pop: 56 
+top: 69
+push: 74
+curState: 74 reduce: 19
+rule: LD -> OPRD opm OPRD
+ pop: 74  pop: 69  pop: 54 
+top: 34
+push: 53
+curState: 53 push shift: 68
 Classe: id | Lexema: B | Tipo: NULO
-curState: 66 Erro sintático: linha 21, coluna 6.
+curState: 68 reduce: 18
+rule: CMD -> id rcb LD ptv
+ pop: 68  pop: 53  pop: 34  pop: 13 
+top: 7
+push: 7
+curState: 7 push shift: 13
 Classe: RCB | Lexema: <- | Tipo: NULO
-curState: 66 Erro sintático: linha 21, coluna 8.
+curState: 13 push shift: 34
 Classe: id | Lexema: B | Tipo: NULO
-curState: 66 Erro sintático: linha 21, coluna 9.
+curState: 34 push shift: 55
 Classe: OPM | Lexema: + | Tipo: NULO
-curState: 66 Erro sintático: linha 21, coluna 10.
+curState: 55 reduce: 21
+rule: OPRD -> id
+ pop: 55 
+top: 34
+push: 54
+curState: 54 push shift: 69
 Classe: NUM | Lexema: 3 | Tipo: inteiro
-curState: 66 Erro sintático: linha 21, coluna 11.
+curState: 69 push shift: 56
 Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 66 Erro sintático: linha 21, coluna 12.
+curState: 56 reduce: 22
+rule: OPRD -> num
+ pop: 56 
+top: 69
+push: 74
+curState: 74 reduce: 19
+rule: LD -> OPRD opm OPRD
+ pop: 74  pop: 69  pop: 54 
+top: 34
+push: 53
+curState: 53 push shift: 68
 Classe: id | Lexema: D | Tipo: NULO
-curState: 66 Erro sintático: linha 22, coluna 6.
+curState: 68 reduce: 18
+rule: CMD -> id rcb LD ptv
+ pop: 68  pop: 53  pop: 34  pop: 13 
+top: 7
+push: 7
+curState: 7 push shift: 13
 Classe: RCB | Lexema: <- | Tipo: NULO
-curState: 66 Erro sintático: linha 22, coluna 8.
+curState: 13 push shift: 34
 Classe: id | Lexema: B | Tipo: NULO
-curState: 66 Erro sintático: linha 22, coluna 9.
+curState: 34 push shift: 55
 Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 66 Erro sintático: linha 22, coluna 10.
+curState: 55 reduce: 21
+rule: OPRD -> id
+ pop: 55 
+top: 34
+push: 54
+curState: 54 reduce: 20
+rule: LD -> OPRD
+ pop: 54 
+top: 34
+push: 53
+curState: 53 push shift: 68
 Classe: id | Lexema: C | Tipo: NULO
-curState: 66 Erro sintático: linha 23, coluna 6.
+curState: 68 reduce: 18
+rule: CMD -> id rcb LD ptv
+ pop: 68  pop: 53  pop: 34  pop: 13 
+top: 7
+push: 7
+curState: 7 push shift: 13
 Classe: RCB | Lexema: <- | Tipo: NULO
-curState: 66 Erro sintático: linha 23, coluna 8.
+curState: 13 push shift: 34
 Classe: NUM | Lexema: 5.0 | Tipo: real
-curState: 66 Erro sintático: linha 23, coluna 11.
+curState: 34 push shift: 56
 Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 66 Erro sintático: linha 23, coluna 12.
+curState: 56 reduce: 22
+rule: OPRD -> num
+ pop: 56 
+top: 34
+push: 54
+curState: 54 reduce: 20
+rule: LD -> OPRD
+ pop: 54 
+top: 34
+push: 53
+curState: 53 push shift: 68
 Classe: repita | Lexema: repita | Tipo: repita
-curState: 66 Erro sintático: linha 24, coluna 11.
+curState: 68 reduce: 18
+rule: CMD -> id rcb LD ptv
+ pop: 68  pop: 53  pop: 34  pop: 13 
+top: 7
+push: 7
+curState: 7 push shift: 17
 Classe: AB_P | Lexema: ( | Tipo: NULO
-curState: 66 Erro sintático: linha 24, coluna 13.
+curState: 17 push shift: 46
 Classe: id | Lexema: B | Tipo: NULO
-curState: 66 Erro sintático: linha 24, coluna 14.
+curState: 46 push shift: 55
 Classe: OPR | Lexema: < | Tipo: NULO
-curState: 66 Erro sintático: linha 24, coluna 15.
+curState: 55 reduce: 21
+rule: OPRD -> id
+ pop: 55 
+top: 46
+push: 64
+curState: 64 push shift: 71
 Classe: NUM | Lexema: 5 | Tipo: inteiro
-curState: 66 Erro sintático: linha 24, coluna 16.
+curState: 71 push shift: 56
 Classe: FC_P | Lexema: ) | Tipo: NULO
-curState: 66 Erro sintático: linha 24, coluna 17.
+curState: 56 reduce: 22
+rule: OPRD -> num
+ pop: 56 
+top: 71
+push: 76
+curState: 76 reduce: 26
+rule: EXP_R -> OPRD opr OPRD
+ pop: 76  pop: 71  pop: 64 
+top: 46
+push: 65
+curState: 65 push shift: 72
 Classe: id | Lexema: C | Tipo: NULO
-curState: 66 Erro sintático: linha 25, coluna 10.
+curState: 72 reduce: 33
+rule: CABR -> repita abp EXP_R fcp
+ pop: 72  pop: 65  pop: 46  pop: 17 
+top: 7
+push: 15
+curState: 15 push shift: 13
 Classe: RCB | Lexema: <- | Tipo: NULO
-curState: 66 Erro sintático: linha 25, coluna 12.
+curState: 13 push shift: 34
 Classe: id | Lexema: B | Tipo: NULO
-curState: 66 Erro sintático: linha 25, coluna 13.
+curState: 34 push shift: 55
 Classe: OPM | Lexema: + | Tipo: NULO
-curState: 66 Erro sintático: linha 25, coluna 14.
+curState: 55 reduce: 21
+rule: OPRD -> id
+ pop: 55 
+top: 34
+push: 54
+curState: 54 push shift: 69
 Classe: NUM | Lexema: 2 | Tipo: inteiro
-curState: 66 Erro sintático: linha 25, coluna 15.
+curState: 69 push shift: 56
 Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 66 Erro sintático: linha 25, coluna 16.
+curState: 56 reduce: 22
+rule: OPRD -> num
+ pop: 56 
+top: 69
+push: 74
+curState: 74 reduce: 19
+rule: LD -> OPRD opm OPRD
+ pop: 74  pop: 69  pop: 54 
+top: 34
+push: 53
+curState: 53 push shift: 68
 Classe: escreva | Lexema: escreva | Tipo: escreva
-curState: 66 Erro sintático: linha 26, coluna 16.
+curState: 68 reduce: 18
+rule: CMD -> id rcb LD ptv
+ pop: 68  pop: 53  pop: 34  pop: 13 
+top: 15
+push: 42
+curState: 42 push shift: 12
 Classe: id | Lexema: C | Tipo: NULO
-curState: 66 Erro sintático: linha 26, coluna 18.
+curState: 12 push shift: 33
 Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 66 Erro sintático: linha 26, coluna 19.
+curState: 33 reduce: 16
+rule: ARG -> id
+ pop: 33 
+top: 12
+push: 30
+curState: 30 push shift: 52
 Classe: id | Lexema: B | Tipo: NULO
-curState: 66 Erro sintático: linha 27, coluna 10.
+curState: 52 reduce: 13
+rule: ES -> escreva ARG ptv
+ pop: 52  pop: 30  pop: 12 
+top: 42
+push: 41
+curState: 41 push shift: 13
 Classe: RCB | Lexema: <- | Tipo: NULO
-curState: 66 Erro sintático: linha 27, coluna 12.
+curState: 13 push shift: 34
 Classe: id | Lexema: B | Tipo: NULO
-curState: 66 Erro sintático: linha 27, coluna 13.
+curState: 34 push shift: 55
 Classe: OPM | Lexema: + | Tipo: NULO
-curState: 66 Erro sintático: linha 27, coluna 14.
+curState: 55 reduce: 21
+rule: OPRD -> id
+ pop: 55 
+top: 34
+push: 54
+curState: 54 push shift: 69
 Classe: NUM | Lexema: 1 | Tipo: inteiro
-curState: 66 Erro sintático: linha 27, coluna 15.
+curState: 69 push shift: 56
 Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 66 Erro sintático: linha 27, coluna 16.
+curState: 56 reduce: 22
+rule: OPRD -> num
+ pop: 56 
+top: 69
+push: 74
+curState: 74 reduce: 19
+rule: LD -> OPRD opm OPRD
+ pop: 74  pop: 69  pop: 54 
+top: 34
+push: 53
+curState: 53 push shift: 68
 Classe: fimrepita | Lexema: fimrepita | Tipo: fimrepita
-curState: 66 Erro sintático: linha 28, coluna 14.
+curState: 68 reduce: 18
+rule: CMD -> id rcb LD ptv
+ pop: 68  pop: 53  pop: 34  pop: 13 
+top: 41
+push: 42
+curState: 42 push shift: 44
 Classe: escreva | Lexema: escreva | Tipo: escreva
-curState: 66 Erro sintático: linha 29, coluna 12.
-Classe: LIT | Lexema: "\nB=\n" | Tipo: literal
-curState: 66 Erro sintático: linha 29, coluna 21.
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 66 Erro sintático: linha 29, coluna 22.
-Classe: escreva | Lexema: escreva | Tipo: escreva
-curState: 66 Erro sintático: linha 30, coluna 12.
-Classe: id | Lexema: D | Tipo: NULO
-curState: 66 Erro sintático: linha 30, coluna 14.
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 66 Erro sintático: linha 30, coluna 15.
-Classe: escreva | Lexema: escreva | Tipo: escreva
-curState: 66 Erro sintático: linha 31, coluna 12.
-Classe: LIT | Lexema: "\n" | Tipo: literal
-curState: 66 Erro sintático: linha 31, coluna 17.
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 66 Erro sintático: linha 31, coluna 18.
-Classe: escreva | Lexema: escreva | Tipo: escreva
-curState: 66 Erro sintático: linha 32, coluna 12.
-Classe: id | Lexema: C | Tipo: NULO
-curState: 66 Erro sintático: linha 32, coluna 14.
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 66 Erro sintático: linha 32, coluna 15.
-Classe: escreva | Lexema: escreva | Tipo: escreva
-curState: 66 Erro sintático: linha 33, coluna 12.
-Classe: LIT | Lexema: "\n" | Tipo: literal
-curState: 66 Erro sintático: linha 33, coluna 17.
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 66 Erro sintático: linha 33, coluna 18.
-Classe: escreva | Lexema: escreva | Tipo: escreva
-curState: 66 Erro sintático: linha 34, coluna 12.
-Classe: id | Lexema: A | Tipo: NULO
-curState: 66 Erro sintático: linha 34, coluna 14.
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 66 Erro sintático: linha 34, coluna 15.
-Classe: fim | Lexema: fim | Tipo: fim
-curState: 66 Erro sintático: linha 35, coluna 4.
-Classe: EOF | Lexema: EOF | Tipo: NULO
-curState: 66 Erro sintático: linha 36, coluna 1.
+curState: 44 reduce: 37
+rule: CPR -> fimrepita
+ pop: 44 
+top: 42
+push: 0
+curState: 0 Erro sintático: linha 29, coluna 12.
