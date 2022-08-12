@@ -49,15 +49,18 @@ int main(int argc, char* argv[]) {
             return 0;
     }
 
-    Lexical lex(source_file);
-    token tkn;
+    // Lexical lex(source_file);
+    // token tkn;
 
-    do {
-        tkn = lex.scanner();
-        tkn.print();
-    } while (tkn.classe != Classe::Eof);
+    // do {
+    //     tkn = lex.scanner();
+    //     tkn.print();
+    // } while (tkn.classe != Classe::Eof);
 
-    lex.printSymbolTable();
+    // lex.printSymbolTable();
+
+    Syntactic syntactic(source_file);
+    syntactic.analyze();
 
     return 0;
 }

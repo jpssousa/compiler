@@ -4,8 +4,8 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include "lexical/lexical.hpp"
-#include "common.hpp"
+#include "syntatic/syntatic.hpp"
+// #include "common.hpp"
 
 using namespace std;
 

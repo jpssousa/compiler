@@ -1,0 +1,39 @@
+P' -> P
+P -> inicio V A
+V -> varinicio LV
+LV -> D LV
+LV -> varfim ptv
+D -> TIPO L ptv
+L -> id vir L
+L -> id
+TIPO -> inteiro
+TIPO -> real
+TIPO -> literal
+A -> ES A
+ES -> leia id ptv
+ES -> escreva ARG ptv
+ARG -> lit
+ARG -> num
+ARG -> id
+A -> CMD A
+CMD -> id rcb LD ptv
+LD -> OPRD opm OPRD
+LD -> OPRD
+OPRD -> id
+OPRD -> num
+A -> COND A
+COND -> CAB CP
+CAB -> se abp EXP_R fcp entao
+EXP_R -> OPRD opr OPRD
+CP -> ES CP
+CP -> CMD CP
+CP -> COND CP
+CP -> fimse
+A -> R A
+R -> CABR CPR
+CABR -> repita abp EXP_R fcp
+CPR -> ES CPR
+CPR -> CMD CPR
+CPR -> COND CPR
+CPR -> fimrepita
+A -> fim

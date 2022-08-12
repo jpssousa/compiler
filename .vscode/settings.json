@@ -4,6 +4,7 @@
         "iosfwd": "cpp",
         "limits": "cpp",
         "string": "cpp",
-        "set": "cpp"
+        "set": "cpp",
+        "vector": "cpp"
     }
 }

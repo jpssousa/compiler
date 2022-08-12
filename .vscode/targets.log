@@ -10,7 +10,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target `all'.  Stop.
 
 
-# Make data base, printed on Wed Aug  3 20:47:54 2022
+# Make data base, printed on Thu Aug 11 11:10:17 2022
 
 # Variables
 
@@ -23,6 +23,7 @@ make: *** No rule to make target `all'.  Stop.
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # automatic
+ 
 @F = $(notdir $@)
 # makefile
 CURDIR := /Users/jsousa/ufg/compiladores/projeto/lexico
@@ -39,11 +40,13 @@ VSCODE_CWD = /
 # environment
 PATH = /usr/local/opt/node@16/bin:/usr/local/opt/openjdk@17/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/jsousa/flutter/bin
 # environment
+LaunchInstanceID = DB44BF24-9DED-441D-A744-BB0623157704
+# environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.4r5c8j8NP9/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.ZbLDSi7Zjw/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -57,7 +60,7 @@ HOME = /Users/jsousa
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/jsousa/Library/Application Support/Code/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
+VSCODE_CODE_CACHE_PATH = /Users/jsousa/Library/Application Support/Code/CachedData/da76f93349a72022ca4670c1b84860304616aaa2
 # environment
 LOGNAME = jsousa
 # environment
@@ -91,7 +94,7 @@ TMPDIR = /var/folders/jm/ymbl6lcx7l941c8x0mfnwzrh0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/jsousa/Library/Application Support/Code/1.69.2-main.sock
+VSCODE_IPC_HOOK = /Users/jsousa/Library/Application Support/Code/1.70.0-main.sock
 # environment
 MallocNanoZone = 0
 # makefile
@@ -101,19 +104,23 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = com.microsoft.VSCode.5372
+XPC_SERVICE_NAME = com.apple.xpc.launchd.oneshot.0x10000002.Electron
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
 +F = $(notdir $+)
 # environment
 __CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
 # default
 MAKEFILES := 
 # automatic
 <F = $(notdir $<)
 # environment
 LC_ALL = C
+# environment
+SECURITYSESSIONID = 186a9
 # automatic
 ^F = $(notdir $^)
 # default
@@ -125,9 +132,9 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 80887
+VSCODE_PID = 520
 # variable set hash-table stats:
-# Load=56/1024=5%, Rehash=0, Collisions=1/80=1%
+# Load=59/1024=6%, Rehash=0, Collisions=1/83=1%
 
 # Pattern-specific Variable Values
 
@@ -135,15 +142,21 @@ VSCODE_PID = 80887
 
 # Directories
 
-# . (device 16777223, inode 1650023): 25 files, no impossibilities.
+# . (device 16777223, inode 1650023): 22 files, no impossibilities.
 
-# 25 files, no impossibilities in 1 directories.
+# 22 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
 # No implicit rules.
 
 # Files
+
+# Not a target:
+lexical/lexical.hpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 all:
@@ -163,25 +176,7 @@ common.o: common.hpp common.cpp
 	
 
 # Not a target:
-dfa.cpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
 .SUFFIXES:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-dfa.hpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-lexical.cpp:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -189,7 +184,7 @@ lexical.cpp:
 # Not a target:
 makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-03 20:47:24
+#  Last modified 2022-08-11 11:09:50
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -202,7 +197,7 @@ main.cpp:
 #  File has not been updated.
 
 # Not a target:
-lexical.hpp:
+lexical/dfa.cpp:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -213,12 +208,12 @@ main.hpp:
 #  Modification time never checked.
 #  File has not been updated.
 
-dfa.o: dfa.hpp dfa.cpp
+dfa.o: lexical/dfa.hpp lexical/dfa.cpp
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  commands to execute (from `makefile', line 8):
-	g++ -Wall -std=c++14 -c dfa.cpp
+	g++ -Wall -std=c++14 -c lexical/dfa.cpp
 	
 
 # Not a target:
@@ -227,11 +222,23 @@ dfa.o: dfa.hpp dfa.cpp
 #  Modification time never checked.
 #  File has not been updated.
 
+# Not a target:
+syntatic/syntatic.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+lexical/dfa.hpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 run: target
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `makefile', line 17):
+#  commands to execute (from `makefile', line 20):
 	./main fonte.alg > saida.txt
 	
 
@@ -245,24 +252,30 @@ clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `makefile', line 20):
+#  commands to execute (from `makefile', line 23):
 	rm *.o
 	
 
-lexical.o: lexical.hpp lexical.cpp
+lexical.o: lexical/lexical.hpp lexical/lexical.cpp
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  commands to execute (from `makefile', line 11):
-	g++ -Wall -std=c++14 -c lexical.cpp
+	g++ -Wall -std=c++14 -c lexical/lexical.cpp
 	
 
-target: common.o dfa.o lexical.o main.o
+# Not a target:
+syntatic/syntatic.hpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+target: common.o dfa.o lexical.o syntatic.o main.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  commands to execute (from `makefile', line 2):
-	g++ -Wall -std=c++14 common.o dfa.o lexical.o main.o -o main
+	g++ -Wall -std=c++14 common.o dfa.o lexical.o syntatic.o main.o -o main
 	
 
 # Not a target:
@@ -275,12 +288,26 @@ main.o: main.hpp main.cpp
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `makefile', line 14):
+#  commands to execute (from `makefile', line 17):
 	g++ -Wall -std=c++14 -c main.cpp
 	
 
+syntatic.o: syntatic/syntatic.hpp syntatic/syntatic.cpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 14):
+	g++ -Wall -std=c++14 -c syntatic/syntatic.cpp
+	
+
+# Not a target:
+lexical/lexical.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 # files hash-table stats:
-# Load=19/1024=2%, Rehash=0, Collisions=0/44=0%
+# Load=22/1024=2%, Rehash=0, Collisions=0/50=0%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -292,6 +319,6 @@ main.o: main.hpp main.cpp
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed Aug  3 20:47:54 2022
+# Finished Make data base on Thu Aug 11 11:10:17 2022
 
  
