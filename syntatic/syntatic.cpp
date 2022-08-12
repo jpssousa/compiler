@@ -173,12 +173,21 @@ void Syntactic::analyze() {
 
         pair<Action, int> currAction = actions[currState][tkn.classe];
         if (currAction.first == Action::shift) {
-            printf("shift: %d\n", currAction.second);
+            printf("push shift: %d\n", currAction.second);
             st.push(currAction.second);
             continue;
         }
         else if (currAction.first == Action::reduce) {
             printf("reduce: %d\n", currAction.second);
+            printf("rule: %s\n", rules[currAction.second].rule.c_str());
+            for (int i = 0; i < rules[currAction.second].rhs_size; i++) {
+                printf(" pop: %d ", st.top());
+                st.pop();
+            }
+            int t = st.top();
+            printf("\ntop: %d\n", t);
+            st.push(gotos[t][rules[currAction.second].alpha]);
+
             // for (int i = 0; i < rules[currAction.second].second; i++) {
             //     st.pop();
             // }
@@ -188,7 +197,7 @@ void Syntactic::analyze() {
             // int state = gotos[t][key[0]];
             // st.push(gotos[state][key[0]]);
             // printf("%s\n", rules[currAction.second].first.c_str());
-            break;
+            // break;
         }
         else if (currAction.first == Action::accept) {
             printf("\nFim de análise.\n");

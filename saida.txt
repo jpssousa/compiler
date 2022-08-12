@@ -232,10 +232,251 @@ alpha: CPR | rhs_size: 1
 A -> fim
 alpha: A | rhs_size: 1
 Classe: inicio | Lexema: inicio | Tipo: inicio
-curState: 0 shift: 2
+curState: 0 push shift: 2
 Classe: varinicio | Lexema: varinicio | Tipo: varinicio
-curState: 2 shift: 4
+curState: 2 push shift: 4
 Classe: literal | Lexema: literal | Tipo: NULO
-curState: 4 shift: 24
+curState: 4 push shift: 24
 Classe: id | Lexema: A | Tipo: NULO
 curState: 24 reduce: 10
+rule: TIPO -> literal
+ pop: 24 
+top: 4
+Classe: VIR | Lexema: , | Tipo: NULO
+curState: 21 Erro sintático: linha 3, coluna 19.
+Classe: id | Lexema: B | Tipo: NULO
+curState: 21 push shift: 50
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 50 reduce: 7
+rule: L -> id
+ pop: 50 
+top: 21
+Classe: inteiro | Lexema: inteiro | Tipo: NULO
+curState: 49 Erro sintático: linha 4, coluna 16.
+Classe: id | Lexema: B | Tipo: NULO
+curState: 49 Erro sintático: linha 4, coluna 18.
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 49 push shift: 66
+Classe: inteiro | Lexema: inteiro | Tipo: NULO
+curState: 66 reduce: 5
+rule: D -> TIPO L ptv
+ pop: 66  pop: 49  pop: 21 
+top: 4
+Classe: id | Lexema: D | Tipo: NULO
+curState: 19 Erro sintático: linha 5, coluna 18.
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 19 Erro sintático: linha 5, coluna 19.
+Classe: real | Lexema: real | Tipo: NULO
+curState: 19 push shift: 23
+Classe: id | Lexema: C | Tipo: NULO
+curState: 23 reduce: 9
+rule: TIPO -> real
+ pop: 23 
+top: 19
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 21 Erro sintático: linha 6, coluna 17.
+Classe: varfim | Lexema: varfim | Tipo: varfim
+curState: 21 Erro sintático: linha 7, coluna 11.
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 21 Erro sintático: linha 7, coluna 12.
+Classe: escreva | Lexema: escreva | Tipo: escreva
+curState: 21 Erro sintático: linha 8, coluna 12.
+Classe: LIT | Lexema: "Digite B:" | Tipo: literal
+curState: 21 Erro sintático: linha 8, coluna 24.
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 21 Erro sintático: linha 8, coluna 25.
+Classe: leia | Lexema: leia | Tipo: leia
+curState: 21 Erro sintático: linha 9, coluna 9.
+Classe: id | Lexema: B | Tipo: NULO
+curState: 21 push shift: 50
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 50 reduce: 7
+rule: L -> id
+ pop: 50 
+top: 21
+Classe: escreva | Lexema: escreva | Tipo: escreva
+curState: 49 Erro sintático: linha 10, coluna 12.
+Classe: LIT | Lexema: "Digite A:" | Tipo: literal
+curState: 49 Erro sintático: linha 10, coluna 24.
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 49 push shift: 66
+Classe: leia | Lexema: leia | Tipo: leia
+curState: 66 Erro sintático: linha 11, coluna 9.
+Classe: id | Lexema: A | Tipo: NULO
+curState: 66 Erro sintático: linha 11, coluna 11.
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 66 Erro sintático: linha 11, coluna 12.
+Classe: se | Lexema: se | Tipo: se
+curState: 66 Erro sintático: linha 12, coluna 7.
+Classe: AB_P | Lexema: ( | Tipo: NULO
+curState: 66 Erro sintático: linha 12, coluna 8.
+Classe: id | Lexema: B | Tipo: NULO
+curState: 66 Erro sintático: linha 12, coluna 9.
+Classe: OPR | Lexema: > | Tipo: NULO
+curState: 66 Erro sintático: linha 12, coluna 10.
+Classe: NUM | Lexema: 2 | Tipo: inteiro
+curState: 66 Erro sintático: linha 12, coluna 11.
+Classe: FC_P | Lexema: ) | Tipo: NULO
+curState: 66 Erro sintático: linha 12, coluna 12.
+Classe: entao | Lexema: entao | Tipo: entao
+curState: 66 Erro sintático: linha 13, coluna 10.
+Classe: se | Lexema: se | Tipo: se
+curState: 66 Erro sintático: linha 14, coluna 11.
+Classe: AB_P | Lexema: ( | Tipo: NULO
+curState: 66 Erro sintático: linha 14, coluna 12.
+Classe: id | Lexema: B | Tipo: NULO
+curState: 66 Erro sintático: linha 14, coluna 13.
+Classe: OPR | Lexema: <= | Tipo: NULO
+curState: 66 Erro sintático: linha 14, coluna 15.
+Classe: NUM | Lexema: 4 | Tipo: inteiro
+curState: 66 Erro sintático: linha 14, coluna 16.
+Classe: FC_P | Lexema: ) | Tipo: NULO
+curState: 66 Erro sintático: linha 14, coluna 17.
+Classe: entao | Lexema: entao | Tipo: entao
+curState: 66 Erro sintático: linha 15, coluna 14.
+Classe: escreva | Lexema: escreva | Tipo: escreva
+curState: 66 Erro sintático: linha 16, coluna 20.
+Classe: LIT | Lexema: "B esta entre 2 e 4" | Tipo: literal
+curState: 66 Erro sintático: linha 16, coluna 41.
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 66 Erro sintático: linha 16, coluna 42.
+Classe: fimse | Lexema: fimse | Tipo: fimse
+curState: 66 Erro sintático: linha 17, coluna 14.
+Classe: fimse | Lexema: fimse | Tipo: fimse
+curState: 66 Erro sintático: linha 18, coluna 10.
+Classe: id | Lexema: B | Tipo: NULO
+curState: 66 Erro sintático: linha 19, coluna 6.
+Classe: RCB | Lexema: <- | Tipo: NULO
+curState: 66 Erro sintático: linha 19, coluna 8.
+Classe: id | Lexema: B | Tipo: NULO
+curState: 66 Erro sintático: linha 19, coluna 9.
+Classe: OPM | Lexema: + | Tipo: NULO
+curState: 66 Erro sintático: linha 19, coluna 10.
+Classe: NUM | Lexema: 1 | Tipo: inteiro
+curState: 66 Erro sintático: linha 19, coluna 11.
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 66 Erro sintático: linha 19, coluna 12.
+Classe: id | Lexema: B | Tipo: NULO
+curState: 66 Erro sintático: linha 20, coluna 6.
+Classe: RCB | Lexema: <- | Tipo: NULO
+curState: 66 Erro sintático: linha 20, coluna 8.
+Classe: id | Lexema: B | Tipo: NULO
+curState: 66 Erro sintático: linha 20, coluna 9.
+Classe: OPM | Lexema: + | Tipo: NULO
+curState: 66 Erro sintático: linha 20, coluna 10.
+Classe: NUM | Lexema: 2 | Tipo: inteiro
+curState: 66 Erro sintático: linha 20, coluna 11.
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 66 Erro sintático: linha 20, coluna 12.
+Classe: id | Lexema: B | Tipo: NULO
+curState: 66 Erro sintático: linha 21, coluna 6.
+Classe: RCB | Lexema: <- | Tipo: NULO
+curState: 66 Erro sintático: linha 21, coluna 8.
+Classe: id | Lexema: B | Tipo: NULO
+curState: 66 Erro sintático: linha 21, coluna 9.
+Classe: OPM | Lexema: + | Tipo: NULO
+curState: 66 Erro sintático: linha 21, coluna 10.
+Classe: NUM | Lexema: 3 | Tipo: inteiro
+curState: 66 Erro sintático: linha 21, coluna 11.
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 66 Erro sintático: linha 21, coluna 12.
+Classe: id | Lexema: D | Tipo: NULO
+curState: 66 Erro sintático: linha 22, coluna 6.
+Classe: RCB | Lexema: <- | Tipo: NULO
+curState: 66 Erro sintático: linha 22, coluna 8.
+Classe: id | Lexema: B | Tipo: NULO
+curState: 66 Erro sintático: linha 22, coluna 9.
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 66 Erro sintático: linha 22, coluna 10.
+Classe: id | Lexema: C | Tipo: NULO
+curState: 66 Erro sintático: linha 23, coluna 6.
+Classe: RCB | Lexema: <- | Tipo: NULO
+curState: 66 Erro sintático: linha 23, coluna 8.
+Classe: NUM | Lexema: 5.0 | Tipo: real
+curState: 66 Erro sintático: linha 23, coluna 11.
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 66 Erro sintático: linha 23, coluna 12.
+Classe: repita | Lexema: repita | Tipo: repita
+curState: 66 Erro sintático: linha 24, coluna 11.
+Classe: AB_P | Lexema: ( | Tipo: NULO
+curState: 66 Erro sintático: linha 24, coluna 13.
+Classe: id | Lexema: B | Tipo: NULO
+curState: 66 Erro sintático: linha 24, coluna 14.
+Classe: OPR | Lexema: < | Tipo: NULO
+curState: 66 Erro sintático: linha 24, coluna 15.
+Classe: NUM | Lexema: 5 | Tipo: inteiro
+curState: 66 Erro sintático: linha 24, coluna 16.
+Classe: FC_P | Lexema: ) | Tipo: NULO
+curState: 66 Erro sintático: linha 24, coluna 17.
+Classe: id | Lexema: C | Tipo: NULO
+curState: 66 Erro sintático: linha 25, coluna 10.
+Classe: RCB | Lexema: <- | Tipo: NULO
+curState: 66 Erro sintático: linha 25, coluna 12.
+Classe: id | Lexema: B | Tipo: NULO
+curState: 66 Erro sintático: linha 25, coluna 13.
+Classe: OPM | Lexema: + | Tipo: NULO
+curState: 66 Erro sintático: linha 25, coluna 14.
+Classe: NUM | Lexema: 2 | Tipo: inteiro
+curState: 66 Erro sintático: linha 25, coluna 15.
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 66 Erro sintático: linha 25, coluna 16.
+Classe: escreva | Lexema: escreva | Tipo: escreva
+curState: 66 Erro sintático: linha 26, coluna 16.
+Classe: id | Lexema: C | Tipo: NULO
+curState: 66 Erro sintático: linha 26, coluna 18.
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 66 Erro sintático: linha 26, coluna 19.
+Classe: id | Lexema: B | Tipo: NULO
+curState: 66 Erro sintático: linha 27, coluna 10.
+Classe: RCB | Lexema: <- | Tipo: NULO
+curState: 66 Erro sintático: linha 27, coluna 12.
+Classe: id | Lexema: B | Tipo: NULO
+curState: 66 Erro sintático: linha 27, coluna 13.
+Classe: OPM | Lexema: + | Tipo: NULO
+curState: 66 Erro sintático: linha 27, coluna 14.
+Classe: NUM | Lexema: 1 | Tipo: inteiro
+curState: 66 Erro sintático: linha 27, coluna 15.
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 66 Erro sintático: linha 27, coluna 16.
+Classe: fimrepita | Lexema: fimrepita | Tipo: fimrepita
+curState: 66 Erro sintático: linha 28, coluna 14.
+Classe: escreva | Lexema: escreva | Tipo: escreva
+curState: 66 Erro sintático: linha 29, coluna 12.
+Classe: LIT | Lexema: "\nB=\n" | Tipo: literal
+curState: 66 Erro sintático: linha 29, coluna 21.
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 66 Erro sintático: linha 29, coluna 22.
+Classe: escreva | Lexema: escreva | Tipo: escreva
+curState: 66 Erro sintático: linha 30, coluna 12.
+Classe: id | Lexema: D | Tipo: NULO
+curState: 66 Erro sintático: linha 30, coluna 14.
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 66 Erro sintático: linha 30, coluna 15.
+Classe: escreva | Lexema: escreva | Tipo: escreva
+curState: 66 Erro sintático: linha 31, coluna 12.
+Classe: LIT | Lexema: "\n" | Tipo: literal
+curState: 66 Erro sintático: linha 31, coluna 17.
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 66 Erro sintático: linha 31, coluna 18.
+Classe: escreva | Lexema: escreva | Tipo: escreva
+curState: 66 Erro sintático: linha 32, coluna 12.
+Classe: id | Lexema: C | Tipo: NULO
+curState: 66 Erro sintático: linha 32, coluna 14.
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 66 Erro sintático: linha 32, coluna 15.
+Classe: escreva | Lexema: escreva | Tipo: escreva
+curState: 66 Erro sintático: linha 33, coluna 12.
+Classe: LIT | Lexema: "\n" | Tipo: literal
+curState: 66 Erro sintático: linha 33, coluna 17.
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 66 Erro sintático: linha 33, coluna 18.
+Classe: escreva | Lexema: escreva | Tipo: escreva
+curState: 66 Erro sintático: linha 34, coluna 12.
+Classe: id | Lexema: A | Tipo: NULO
+curState: 66 Erro sintático: linha 34, coluna 14.
+Classe: PT_V | Lexema: ; | Tipo: NULO
+curState: 66 Erro sintático: linha 34, coluna 15.
+Classe: fim | Lexema: fim | Tipo: fim
+curState: 66 Erro sintático: linha 35, coluna 4.
+Classe: EOF | Lexema: EOF | Tipo: NULO
+curState: 66 Erro sintático: linha 36, coluna 1.
