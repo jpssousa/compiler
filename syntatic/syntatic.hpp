@@ -7,6 +7,7 @@
 #include <utility>
 #include <cstdio>
 #include <stack>
+#include <set>
 
 #include "../common.hpp"
 #include "../lexical/lexical.hpp"

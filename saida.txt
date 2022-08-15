@@ -1,798 +1,132 @@
 No object target file provided. Writing on 'alg.c'
-S  0:sht 2 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S  1:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 acc-1 
-S  2:err-1 sht 4 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S  3:err-1 err-1 err-1 sht12 sht11 sht16 err-1 err-1 sht17 err-1 sht10 err-1 err-1 err-1 err-1 err-1 sht13 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S  4:err-1 err-1 sht20 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 sht22 sht23 sht24 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S  5:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 red 1 
-S  6:err-1 err-1 err-1 sht12 sht11 sht16 err-1 err-1 sht17 err-1 sht10 err-1 err-1 err-1 err-1 err-1 sht13 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S  7:err-1 err-1 err-1 sht12 sht11 sht16 err-1 err-1 sht17 err-1 sht10 err-1 err-1 err-1 err-1 err-1 sht13 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S  8:err-1 err-1 err-1 sht12 sht11 sht16 err-1 err-1 sht17 err-1 sht10 err-1 err-1 err-1 err-1 err-1 sht13 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S  9:err-1 err-1 err-1 sht12 sht11 sht16 err-1 err-1 sht17 err-1 sht10 err-1 err-1 err-1 err-1 err-1 sht13 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 10:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 red38 
-S 11:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 sht29 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 12:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 sht32 sht31 sht33 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 13:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 sht34 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 14:err-1 err-1 err-1 sht12 sht11 sht16 err-1 sht39 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 sht13 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 15:err-1 err-1 err-1 sht12 sht11 sht16 err-1 err-1 err-1 sht44 err-1 err-1 err-1 err-1 err-1 err-1 sht13 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 16:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 sht45 err-1 err-1 err-1 err-1 err-1 
-S 17:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 sht46 err-1 err-1 err-1 err-1 err-1 
-S 18:err-1 err-1 err-1 red 2 red 2 red 2 err-1 err-1 red 2 err-1 red 2 err-1 err-1 err-1 err-1 err-1 red 2 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 19:err-1 err-1 sht20 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 sht22 sht23 sht24 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 20:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 sht48 err-1 err-1 err-1 
-S 21:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 sht50 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 22:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 red 8 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 23:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 red 9 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 24:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 red10 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 25:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 red11 
-S 26:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 red17 
-S 27:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 red23 
-S 28:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 red31 
-S 29:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 sht51 err-1 err-1 err-1 
-S 30:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 sht52 err-1 err-1 err-1 
-S 31:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 red14 err-1 err-1 err-1 
-S 32:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 red15 err-1 err-1 err-1 
-S 33:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 red16 err-1 err-1 err-1 
-S 34:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 sht56 err-1 sht55 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 35:err-1 err-1 err-1 red24 red24 red24 err-1 red24 red24 red24 red24 err-1 err-1 err-1 err-1 err-1 red24 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 36:err-1 err-1 err-1 sht12 sht11 sht16 err-1 sht39 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 sht13 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 37:err-1 err-1 err-1 sht12 sht11 sht16 err-1 sht39 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 sht13 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 38:err-1 err-1 err-1 sht12 sht11 sht16 err-1 sht39 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 sht13 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 39:err-1 err-1 err-1 red30 red30 red30 err-1 red30 red30 red30 red30 err-1 err-1 err-1 err-1 err-1 red30 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 40:err-1 err-1 err-1 red32 red32 red32 err-1 err-1 red32 err-1 red32 err-1 err-1 err-1 err-1 err-1 red32 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 41:err-1 err-1 err-1 sht12 sht11 sht16 err-1 err-1 err-1 sht44 err-1 err-1 err-1 err-1 err-1 err-1 sht13 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 42:err-1 err-1 err-1 sht12 sht11 sht16 err-1 err-1 err-1 sht44 err-1 err-1 err-1 err-1 err-1 err-1 sht13 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 43:err-1 err-1 err-1 sht12 sht11 sht16 err-1 err-1 err-1 sht44 err-1 err-1 err-1 err-1 err-1 err-1 sht13 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 44:err-1 err-1 err-1 red37 red37 red37 err-1 err-1 red37 err-1 red37 err-1 err-1 err-1 err-1 err-1 red37 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 45:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 sht56 err-1 sht55 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 46:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 sht56 err-1 sht55 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 47:err-1 err-1 err-1 red 3 red 3 red 3 err-1 err-1 red 3 err-1 red 3 err-1 err-1 err-1 err-1 err-1 red 3 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 48:err-1 err-1 err-1 red 4 red 4 red 4 err-1 err-1 red 4 err-1 red 4 err-1 err-1 err-1 err-1 err-1 red 4 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 49:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 sht66 err-1 err-1 err-1 
-S 50:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 red 7 sht67 err-1 err-1 
-S 51:err-1 err-1 err-1 red12 red12 red12 err-1 red12 red12 red12 red12 err-1 err-1 err-1 err-1 err-1 red12 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 52:err-1 err-1 err-1 red13 red13 red13 err-1 red13 red13 red13 red13 err-1 err-1 err-1 err-1 err-1 red13 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 53:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 sht68 err-1 err-1 err-1 
-S 54:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 sht69 err-1 err-1 red20 err-1 err-1 err-1 
-S 55:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 red21 err-1 red21 err-1 red21 red21 err-1 err-1 err-1 
-S 56:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 red22 err-1 red22 err-1 red22 red22 err-1 err-1 err-1 
-S 57:err-1 err-1 err-1 red27 red27 red27 err-1 red27 red27 red27 red27 err-1 err-1 err-1 err-1 err-1 red27 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 58:err-1 err-1 err-1 red28 red28 red28 err-1 red28 red28 red28 red28 err-1 err-1 err-1 err-1 err-1 red28 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 59:err-1 err-1 err-1 red29 red29 red29 err-1 red29 red29 red29 red29 err-1 err-1 err-1 err-1 err-1 red29 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 60:err-1 err-1 err-1 red34 red34 red34 err-1 err-1 red34 err-1 red34 err-1 err-1 err-1 err-1 err-1 red34 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 61:err-1 err-1 err-1 red35 red35 red35 err-1 err-1 red35 err-1 red35 err-1 err-1 err-1 err-1 err-1 red35 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 62:err-1 err-1 err-1 red36 red36 red36 err-1 err-1 red36 err-1 red36 err-1 err-1 err-1 err-1 err-1 red36 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 63:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 sht70 err-1 err-1 err-1 err-1 
-S 64:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 sht71 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 65:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 sht72 err-1 err-1 err-1 err-1 
-S 66:err-1 err-1 red 5 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 red 5 red 5 red 5 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 67:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 sht50 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 68:err-1 err-1 err-1 red18 red18 red18 err-1 red18 red18 red18 red18 err-1 err-1 err-1 err-1 err-1 red18 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 69:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 sht56 err-1 sht55 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 70:err-1 err-1 err-1 err-1 err-1 err-1 sht75 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 71:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 sht56 err-1 sht55 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 72:err-1 err-1 err-1 red33 red33 red33 err-1 err-1 err-1 red33 err-1 err-1 err-1 err-1 err-1 err-1 red33 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 73:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 red 6 err-1 err-1 err-1 
-S 74:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 red19 err-1 err-1 err-1 
-S 75:err-1 err-1 err-1 red25 red25 red25 err-1 red25 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 red25 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 
-S 76:err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 err-1 red26 err-1 err-1 err-1 err-1 
-S  0: (P' -1)  (P  1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S  1: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S  2: (P' -1)  (P -1)  (V  3)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S  3: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A  5)  (ES  6)  (ARG -1)  (CMD  7)  (LD -1)  (OPRD -1)  (COND  8)  (CAB 14)  (EXP_R -1)  (CP -1)  (R  9)  (CABR 15)  (CPR -1) 
-S  4: (P' -1)  (P -1)  (V -1)  (LV 18)  (D 19)  (L -1)  (TIPO 21)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S  5: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S  6: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A 25)  (ES  6)  (ARG -1)  (CMD  7)  (LD -1)  (OPRD -1)  (COND  8)  (CAB 14)  (EXP_R -1)  (CP -1)  (R  9)  (CABR 15)  (CPR -1) 
-S  7: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A 26)  (ES  6)  (ARG -1)  (CMD  7)  (LD -1)  (OPRD -1)  (COND  8)  (CAB 14)  (EXP_R -1)  (CP -1)  (R  9)  (CABR 15)  (CPR -1) 
-S  8: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A 27)  (ES  6)  (ARG -1)  (CMD  7)  (LD -1)  (OPRD -1)  (COND  8)  (CAB 14)  (EXP_R -1)  (CP -1)  (R  9)  (CABR 15)  (CPR -1) 
-S  9: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A 28)  (ES  6)  (ARG -1)  (CMD  7)  (LD -1)  (OPRD -1)  (COND  8)  (CAB 14)  (EXP_R -1)  (CP -1)  (R  9)  (CABR 15)  (CPR -1) 
-S 10: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 11: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 12: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG 30)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 13: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 14: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES 36)  (ARG -1)  (CMD 37)  (LD -1)  (OPRD -1)  (COND 38)  (CAB 14)  (EXP_R -1)  (CP 35)  (R -1)  (CABR -1)  (CPR -1) 
-S 15: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES 41)  (ARG -1)  (CMD 42)  (LD -1)  (OPRD -1)  (COND 43)  (CAB 14)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR 40) 
-S 16: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 17: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 18: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 19: (P' -1)  (P -1)  (V -1)  (LV 47)  (D 19)  (L -1)  (TIPO 21)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 20: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 21: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L 49)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 22: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 23: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 24: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 25: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 26: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 27: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 28: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 29: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 30: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 31: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 32: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 33: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 34: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD 53)  (OPRD 54)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 35: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 36: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES 36)  (ARG -1)  (CMD 37)  (LD -1)  (OPRD -1)  (COND 38)  (CAB 14)  (EXP_R -1)  (CP 57)  (R -1)  (CABR -1)  (CPR -1) 
-S 37: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES 36)  (ARG -1)  (CMD 37)  (LD -1)  (OPRD -1)  (COND 38)  (CAB 14)  (EXP_R -1)  (CP 58)  (R -1)  (CABR -1)  (CPR -1) 
-S 38: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES 36)  (ARG -1)  (CMD 37)  (LD -1)  (OPRD -1)  (COND 38)  (CAB 14)  (EXP_R -1)  (CP 59)  (R -1)  (CABR -1)  (CPR -1) 
-S 39: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 40: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 41: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES 41)  (ARG -1)  (CMD 42)  (LD -1)  (OPRD -1)  (COND 43)  (CAB 14)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR 60) 
-S 42: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES 41)  (ARG -1)  (CMD 42)  (LD -1)  (OPRD -1)  (COND 43)  (CAB 14)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR 61) 
-S 43: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES 41)  (ARG -1)  (CMD 42)  (LD -1)  (OPRD -1)  (COND 43)  (CAB 14)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR 62) 
-S 44: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 45: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD 64)  (COND -1)  (CAB -1)  (EXP_R 63)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 46: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD 64)  (COND -1)  (CAB -1)  (EXP_R 65)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 47: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 48: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 49: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 50: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 51: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 52: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 53: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 54: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 55: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 56: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 57: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 58: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 59: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 60: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 61: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 62: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 63: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 64: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 65: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 66: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 67: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L 73)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 68: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 69: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD 74)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 70: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 71: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD 76)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 72: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 73: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 74: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 75: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-S 76: (P' -1)  (P -1)  (V -1)  (LV -1)  (D -1)  (L -1)  (TIPO -1)  (A -1)  (ES -1)  (ARG -1)  (CMD -1)  (LD -1)  (OPRD -1)  (COND -1)  (CAB -1)  (EXP_R -1)  (CP -1)  (R -1)  (CABR -1)  (CPR -1) 
-P' -> P
-alpha: P' | rhs_size: 1
-P -> inicio V A
-alpha: P | rhs_size: 3
-V -> varinicio LV
-alpha: V | rhs_size: 2
-LV -> D LV
-alpha: LV | rhs_size: 2
-LV -> varfim ptv
-alpha: LV | rhs_size: 2
-D -> TIPO L ptv
-alpha: D | rhs_size: 3
-L -> id vir L
-alpha: L | rhs_size: 3
-L -> id
-alpha: L | rhs_size: 1
-TIPO -> inteiro
-alpha: TIPO | rhs_size: 1
-TIPO -> real
-alpha: TIPO | rhs_size: 1
 TIPO -> literal
-alpha: TIPO | rhs_size: 1
-A -> ES A
-alpha: A | rhs_size: 2
-ES -> leia id ptv
-alpha: ES | rhs_size: 3
-ES -> escreva ARG ptv
-alpha: ES | rhs_size: 3
+L -> id
+L -> id vir L
+D -> TIPO L ptv
+TIPO -> inteiro
+L -> id
+D -> TIPO L ptv
+TIPO -> inteiro
+L -> id
+D -> TIPO L ptv
+TIPO -> real
+L -> id
+D -> TIPO L ptv
+LV -> varfim ptv
+LV -> D LV
+LV -> D LV
+LV -> D LV
+LV -> D LV
+V -> varinicio LV
 ARG -> lit
-alpha: ARG | rhs_size: 1
-ARG -> num
-alpha: ARG | rhs_size: 1
-ARG -> id
-alpha: ARG | rhs_size: 1
-A -> CMD A
-alpha: A | rhs_size: 2
-CMD -> id rcb LD ptv
-alpha: CMD | rhs_size: 4
-LD -> OPRD opm OPRD
-alpha: LD | rhs_size: 3
-LD -> OPRD
-alpha: LD | rhs_size: 1
+ES -> escreva ARG ptv
+ES -> leia id ptv
+ARG -> lit
+ES -> escreva ARG ptv
+ES -> leia id ptv
 OPRD -> id
-alpha: OPRD | rhs_size: 1
 OPRD -> num
-alpha: OPRD | rhs_size: 1
-A -> COND A
-alpha: A | rhs_size: 2
-COND -> CAB CP
-alpha: COND | rhs_size: 2
-CAB -> se abp EXP_R fcp entao
-alpha: CAB | rhs_size: 5
 EXP_R -> OPRD opr OPRD
-alpha: EXP_R | rhs_size: 3
-CP -> ES CP
-alpha: CP | rhs_size: 2
-CP -> CMD CP
-alpha: CP | rhs_size: 2
-CP -> COND CP
-alpha: CP | rhs_size: 2
+CAB -> se abp EXP_R fcp entao
+OPRD -> id
+OPRD -> num
+EXP_R -> OPRD opr OPRD
+CAB -> se abp EXP_R fcp entao
+ARG -> lit
+ES -> escreva ARG ptv
 CP -> fimse
-alpha: CP | rhs_size: 1
-A -> R A
-alpha: A | rhs_size: 2
-R -> CABR CPR
-alpha: R | rhs_size: 2
+CP -> ES CP
+COND -> CAB CP
+CP -> fimse
+CP -> COND CP
+COND -> CAB CP
+OPRD -> id
+OPRD -> num
+LD -> OPRD opm OPRD
+CMD -> id rcb LD ptv
+OPRD -> id
+OPRD -> num
+LD -> OPRD opm OPRD
+CMD -> id rcb LD ptv
+OPRD -> id
+OPRD -> num
+LD -> OPRD opm OPRD
+CMD -> id rcb LD ptv
+OPRD -> id
+LD -> OPRD
+CMD -> id rcb LD ptv
+OPRD -> num
+LD -> OPRD
+CMD -> id rcb LD ptv
+OPRD -> id
+OPRD -> num
+EXP_R -> OPRD opr OPRD
 CABR -> repita abp EXP_R fcp
-alpha: CABR | rhs_size: 4
-CPR -> ES CPR
-alpha: CPR | rhs_size: 2
-CPR -> CMD CPR
-alpha: CPR | rhs_size: 2
-CPR -> COND CPR
-alpha: CPR | rhs_size: 2
+OPRD -> id
+OPRD -> num
+LD -> OPRD opm OPRD
+CMD -> id rcb LD ptv
+ARG -> id
+ES -> escreva ARG ptv
+OPRD -> id
+OPRD -> num
+LD -> OPRD opm OPRD
+CMD -> id rcb LD ptv
 CPR -> fimrepita
-alpha: CPR | rhs_size: 1
+CPR -> CMD CPR
+CPR -> ES CPR
+CPR -> CMD CPR
+R -> CABR CPR
+ARG -> lit
+ES -> escreva ARG ptv
+ARG -> id
+ES -> escreva ARG ptv
+ARG -> lit
+ES -> escreva ARG ptv
+ARG -> id
+ES -> escreva ARG ptv
+ARG -> lit
+ES -> escreva ARG ptv
+ARG -> id
+ES -> escreva ARG ptv
 A -> fim
-alpha: A | rhs_size: 1
-curState: 0 push shift: 2
-Classe: varinicio | Lexema: varinicio | Tipo: varinicio
-curState: 2 push shift: 4
-Classe: literal | Lexema: literal | Tipo: NULO
-curState: 4 push shift: 24
-Classe: id | Lexema: A | Tipo: NULO
-curState: 24 reduce: 10
-rule: TIPO -> literal
- pop: 24 
-top: 4
-push: 21
-curState: 21 push shift: 50
-Classe: VIR | Lexema: , | Tipo: NULO
-curState: 50 push shift: 67
-Classe: id | Lexema: B | Tipo: NULO
-curState: 67 push shift: 50
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 50 reduce: 7
-rule: L -> id
- pop: 50 
-top: 67
-push: 73
-curState: 73 reduce: 6
-rule: L -> id vir L
- pop: 73  pop: 67  pop: 50 
-top: 21
-push: 49
-curState: 49 push shift: 66
-Classe: inteiro | Lexema: inteiro | Tipo: NULO
-curState: 66 reduce: 5
-rule: D -> TIPO L ptv
- pop: 66  pop: 49  pop: 21 
-top: 4
-push: 19
-curState: 19 push shift: 22
-Classe: id | Lexema: B | Tipo: NULO
-curState: 22 reduce: 8
-rule: TIPO -> inteiro
- pop: 22 
-top: 19
-push: 21
-curState: 21 push shift: 50
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 50 reduce: 7
-rule: L -> id
- pop: 50 
-top: 21
-push: 49
-curState: 49 push shift: 66
-Classe: inteiro | Lexema: inteiro | Tipo: NULO
-curState: 66 reduce: 5
-rule: D -> TIPO L ptv
- pop: 66  pop: 49  pop: 21 
-top: 19
-push: 19
-curState: 19 push shift: 22
-Classe: id | Lexema: D | Tipo: NULO
-curState: 22 reduce: 8
-rule: TIPO -> inteiro
- pop: 22 
-top: 19
-push: 21
-curState: 21 push shift: 50
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 50 reduce: 7
-rule: L -> id
- pop: 50 
-top: 21
-push: 49
-curState: 49 push shift: 66
-Classe: real | Lexema: real | Tipo: NULO
-curState: 66 reduce: 5
-rule: D -> TIPO L ptv
- pop: 66  pop: 49  pop: 21 
-top: 19
-push: 19
-curState: 19 push shift: 23
-Classe: id | Lexema: C | Tipo: NULO
-curState: 23 reduce: 9
-rule: TIPO -> real
- pop: 23 
-top: 19
-push: 21
-curState: 21 push shift: 50
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 50 reduce: 7
-rule: L -> id
- pop: 50 
-top: 21
-push: 49
-curState: 49 push shift: 66
-Classe: varfim | Lexema: varfim | Tipo: varfim
-curState: 66 reduce: 5
-rule: D -> TIPO L ptv
- pop: 66  pop: 49  pop: 21 
-top: 19
-push: 19
-curState: 19 push shift: 20
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 20 push shift: 48
-Classe: escreva | Lexema: escreva | Tipo: escreva
-curState: 48 reduce: 4
-rule: LV -> varfim ptv
- pop: 48  pop: 20 
-top: 19
-push: 47
-curState: 47 reduce: 3
-rule: LV -> D LV
- pop: 47  pop: 19 
-top: 19
-push: 47
-curState: 47 reduce: 3
-rule: LV -> D LV
- pop: 47  pop: 19 
-top: 19
-push: 47
-curState: 47 reduce: 3
-rule: LV -> D LV
- pop: 47  pop: 19 
-top: 19
-push: 47
-curState: 47 reduce: 3
-rule: LV -> D LV
- pop: 47  pop: 19 
-top: 4
-push: 18
-curState: 18 reduce: 2
-rule: V -> varinicio LV
- pop: 18  pop: 4 
-top: 2
-push: 3
-curState: 3 push shift: 12
-Classe: LIT | Lexema: "Digite B:" | Tipo: literal
-curState: 12 push shift: 31
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 31 reduce: 14
-rule: ARG -> lit
- pop: 31 
-top: 12
-push: 30
-curState: 30 push shift: 52
-Classe: leia | Lexema: leia | Tipo: leia
-curState: 52 reduce: 13
-rule: ES -> escreva ARG ptv
- pop: 52  pop: 30  pop: 12 
-top: 3
-push: 6
-curState: 6 push shift: 11
-Classe: id | Lexema: B | Tipo: NULO
-curState: 11 push shift: 29
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 29 push shift: 51
-Classe: escreva | Lexema: escreva | Tipo: escreva
-curState: 51 reduce: 12
-rule: ES -> leia id ptv
- pop: 51  pop: 29  pop: 11 
-top: 6
-push: 6
-curState: 6 push shift: 12
-Classe: LIT | Lexema: "Digite A:" | Tipo: literal
-curState: 12 push shift: 31
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 31 reduce: 14
-rule: ARG -> lit
- pop: 31 
-top: 12
-push: 30
-curState: 30 push shift: 52
-Classe: leia | Lexema: leia | Tipo: leia
-curState: 52 reduce: 13
-rule: ES -> escreva ARG ptv
- pop: 52  pop: 30  pop: 12 
-top: 6
-push: 6
-curState: 6 push shift: 11
-Classe: id | Lexema: A | Tipo: NULO
-curState: 11 push shift: 29
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 29 push shift: 51
-Classe: se | Lexema: se | Tipo: se
-curState: 51 reduce: 12
-rule: ES -> leia id ptv
- pop: 51  pop: 29  pop: 11 
-top: 6
-push: 6
-curState: 6 push shift: 16
-Classe: AB_P | Lexema: ( | Tipo: NULO
-curState: 16 push shift: 45
-Classe: id | Lexema: B | Tipo: NULO
-curState: 45 push shift: 55
-Classe: OPR | Lexema: > | Tipo: NULO
-curState: 55 reduce: 21
-rule: OPRD -> id
- pop: 55 
-top: 45
-push: 64
-curState: 64 push shift: 71
-Classe: NUM | Lexema: 2 | Tipo: inteiro
-curState: 71 push shift: 56
-Classe: FC_P | Lexema: ) | Tipo: NULO
-curState: 56 reduce: 22
-rule: OPRD -> num
- pop: 56 
-top: 71
-push: 76
-curState: 76 reduce: 26
-rule: EXP_R -> OPRD opr OPRD
- pop: 76  pop: 71  pop: 64 
-top: 45
-push: 63
-curState: 63 push shift: 70
-Classe: entao | Lexema: entao | Tipo: entao
-curState: 70 push shift: 75
-Classe: se | Lexema: se | Tipo: se
-curState: 75 reduce: 25
-rule: CAB -> se abp EXP_R fcp entao
- pop: 75  pop: 70  pop: 63  pop: 45  pop: 16 
-top: 6
-push: 14
-curState: 14 push shift: 16
-Classe: AB_P | Lexema: ( | Tipo: NULO
-curState: 16 push shift: 45
-Classe: id | Lexema: B | Tipo: NULO
-curState: 45 push shift: 55
-Classe: OPR | Lexema: <= | Tipo: NULO
-curState: 55 reduce: 21
-rule: OPRD -> id
- pop: 55 
-top: 45
-push: 64
-curState: 64 push shift: 71
-Classe: NUM | Lexema: 4 | Tipo: inteiro
-curState: 71 push shift: 56
-Classe: FC_P | Lexema: ) | Tipo: NULO
-curState: 56 reduce: 22
-rule: OPRD -> num
- pop: 56 
-top: 71
-push: 76
-curState: 76 reduce: 26
-rule: EXP_R -> OPRD opr OPRD
- pop: 76  pop: 71  pop: 64 
-top: 45
-push: 63
-curState: 63 push shift: 70
-Classe: entao | Lexema: entao | Tipo: entao
-curState: 70 push shift: 75
-Classe: escreva | Lexema: escreva | Tipo: escreva
-curState: 75 reduce: 25
-rule: CAB -> se abp EXP_R fcp entao
- pop: 75  pop: 70  pop: 63  pop: 45  pop: 16 
-top: 14
-push: 14
-curState: 14 push shift: 12
-Classe: LIT | Lexema: "B esta entre 2 e 4" | Tipo: literal
-curState: 12 push shift: 31
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 31 reduce: 14
-rule: ARG -> lit
- pop: 31 
-top: 12
-push: 30
-curState: 30 push shift: 52
-Classe: fimse | Lexema: fimse | Tipo: fimse
-curState: 52 reduce: 13
-rule: ES -> escreva ARG ptv
- pop: 52  pop: 30  pop: 12 
-top: 14
-push: 36
-curState: 36 push shift: 39
-Classe: fimse | Lexema: fimse | Tipo: fimse
-curState: 39 reduce: 30
-rule: CP -> fimse
- pop: 39 
-top: 36
-push: 57
-curState: 57 reduce: 27
-rule: CP -> ES CP
- pop: 57  pop: 36 
-top: 14
-push: 35
-curState: 35 reduce: 24
-rule: COND -> CAB CP
- pop: 35  pop: 14 
-top: 14
-push: 38
-curState: 38 push shift: 39
-Classe: id | Lexema: B | Tipo: NULO
-curState: 39 reduce: 30
-rule: CP -> fimse
- pop: 39 
-top: 38
-push: 59
-curState: 59 reduce: 29
-rule: CP -> COND CP
- pop: 59  pop: 38 
-top: 14
-push: 35
-curState: 35 reduce: 24
-rule: COND -> CAB CP
- pop: 35  pop: 14 
-top: 6
-push: 8
-curState: 8 push shift: 13
-Classe: RCB | Lexema: <- | Tipo: NULO
-curState: 13 push shift: 34
-Classe: id | Lexema: B | Tipo: NULO
-curState: 34 push shift: 55
-Classe: OPM | Lexema: + | Tipo: NULO
-curState: 55 reduce: 21
-rule: OPRD -> id
- pop: 55 
-top: 34
-push: 54
-curState: 54 push shift: 69
-Classe: NUM | Lexema: 1 | Tipo: inteiro
-curState: 69 push shift: 56
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 56 reduce: 22
-rule: OPRD -> num
- pop: 56 
-top: 69
-push: 74
-curState: 74 reduce: 19
-rule: LD -> OPRD opm OPRD
- pop: 74  pop: 69  pop: 54 
-top: 34
-push: 53
-curState: 53 push shift: 68
-Classe: id | Lexema: B | Tipo: NULO
-curState: 68 reduce: 18
-rule: CMD -> id rcb LD ptv
- pop: 68  pop: 53  pop: 34  pop: 13 
-top: 8
-push: 7
-curState: 7 push shift: 13
-Classe: RCB | Lexema: <- | Tipo: NULO
-curState: 13 push shift: 34
-Classe: id | Lexema: B | Tipo: NULO
-curState: 34 push shift: 55
-Classe: OPM | Lexema: + | Tipo: NULO
-curState: 55 reduce: 21
-rule: OPRD -> id
- pop: 55 
-top: 34
-push: 54
-curState: 54 push shift: 69
-Classe: NUM | Lexema: 2 | Tipo: inteiro
-curState: 69 push shift: 56
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 56 reduce: 22
-rule: OPRD -> num
- pop: 56 
-top: 69
-push: 74
-curState: 74 reduce: 19
-rule: LD -> OPRD opm OPRD
- pop: 74  pop: 69  pop: 54 
-top: 34
-push: 53
-curState: 53 push shift: 68
-Classe: id | Lexema: B | Tipo: NULO
-curState: 68 reduce: 18
-rule: CMD -> id rcb LD ptv
- pop: 68  pop: 53  pop: 34  pop: 13 
-top: 7
-push: 7
-curState: 7 push shift: 13
-Classe: RCB | Lexema: <- | Tipo: NULO
-curState: 13 push shift: 34
-Classe: id | Lexema: B | Tipo: NULO
-curState: 34 push shift: 55
-Classe: OPM | Lexema: + | Tipo: NULO
-curState: 55 reduce: 21
-rule: OPRD -> id
- pop: 55 
-top: 34
-push: 54
-curState: 54 push shift: 69
-Classe: NUM | Lexema: 3 | Tipo: inteiro
-curState: 69 push shift: 56
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 56 reduce: 22
-rule: OPRD -> num
- pop: 56 
-top: 69
-push: 74
-curState: 74 reduce: 19
-rule: LD -> OPRD opm OPRD
- pop: 74  pop: 69  pop: 54 
-top: 34
-push: 53
-curState: 53 push shift: 68
-Classe: id | Lexema: D | Tipo: NULO
-curState: 68 reduce: 18
-rule: CMD -> id rcb LD ptv
- pop: 68  pop: 53  pop: 34  pop: 13 
-top: 7
-push: 7
-curState: 7 push shift: 13
-Classe: RCB | Lexema: <- | Tipo: NULO
-curState: 13 push shift: 34
-Classe: id | Lexema: B | Tipo: NULO
-curState: 34 push shift: 55
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 55 reduce: 21
-rule: OPRD -> id
- pop: 55 
-top: 34
-push: 54
-curState: 54 reduce: 20
-rule: LD -> OPRD
- pop: 54 
-top: 34
-push: 53
-curState: 53 push shift: 68
-Classe: id | Lexema: C | Tipo: NULO
-curState: 68 reduce: 18
-rule: CMD -> id rcb LD ptv
- pop: 68  pop: 53  pop: 34  pop: 13 
-top: 7
-push: 7
-curState: 7 push shift: 13
-Classe: RCB | Lexema: <- | Tipo: NULO
-curState: 13 push shift: 34
-Classe: NUM | Lexema: 5.0 | Tipo: real
-curState: 34 push shift: 56
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 56 reduce: 22
-rule: OPRD -> num
- pop: 56 
-top: 34
-push: 54
-curState: 54 reduce: 20
-rule: LD -> OPRD
- pop: 54 
-top: 34
-push: 53
-curState: 53 push shift: 68
-Classe: repita | Lexema: repita | Tipo: repita
-curState: 68 reduce: 18
-rule: CMD -> id rcb LD ptv
- pop: 68  pop: 53  pop: 34  pop: 13 
-top: 7
-push: 7
-curState: 7 push shift: 17
-Classe: AB_P | Lexema: ( | Tipo: NULO
-curState: 17 push shift: 46
-Classe: id | Lexema: B | Tipo: NULO
-curState: 46 push shift: 55
-Classe: OPR | Lexema: < | Tipo: NULO
-curState: 55 reduce: 21
-rule: OPRD -> id
- pop: 55 
-top: 46
-push: 64
-curState: 64 push shift: 71
-Classe: NUM | Lexema: 5 | Tipo: inteiro
-curState: 71 push shift: 56
-Classe: FC_P | Lexema: ) | Tipo: NULO
-curState: 56 reduce: 22
-rule: OPRD -> num
- pop: 56 
-top: 71
-push: 76
-curState: 76 reduce: 26
-rule: EXP_R -> OPRD opr OPRD
- pop: 76  pop: 71  pop: 64 
-top: 46
-push: 65
-curState: 65 push shift: 72
-Classe: id | Lexema: C | Tipo: NULO
-curState: 72 reduce: 33
-rule: CABR -> repita abp EXP_R fcp
- pop: 72  pop: 65  pop: 46  pop: 17 
-top: 7
-push: 15
-curState: 15 push shift: 13
-Classe: RCB | Lexema: <- | Tipo: NULO
-curState: 13 push shift: 34
-Classe: id | Lexema: B | Tipo: NULO
-curState: 34 push shift: 55
-Classe: OPM | Lexema: + | Tipo: NULO
-curState: 55 reduce: 21
-rule: OPRD -> id
- pop: 55 
-top: 34
-push: 54
-curState: 54 push shift: 69
-Classe: NUM | Lexema: 2 | Tipo: inteiro
-curState: 69 push shift: 56
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 56 reduce: 22
-rule: OPRD -> num
- pop: 56 
-top: 69
-push: 74
-curState: 74 reduce: 19
-rule: LD -> OPRD opm OPRD
- pop: 74  pop: 69  pop: 54 
-top: 34
-push: 53
-curState: 53 push shift: 68
-Classe: escreva | Lexema: escreva | Tipo: escreva
-curState: 68 reduce: 18
-rule: CMD -> id rcb LD ptv
- pop: 68  pop: 53  pop: 34  pop: 13 
-top: 15
-push: 42
-curState: 42 push shift: 12
-Classe: id | Lexema: C | Tipo: NULO
-curState: 12 push shift: 33
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 33 reduce: 16
-rule: ARG -> id
- pop: 33 
-top: 12
-push: 30
-curState: 30 push shift: 52
-Classe: id | Lexema: B | Tipo: NULO
-curState: 52 reduce: 13
-rule: ES -> escreva ARG ptv
- pop: 52  pop: 30  pop: 12 
-top: 42
-push: 41
-curState: 41 push shift: 13
-Classe: RCB | Lexema: <- | Tipo: NULO
-curState: 13 push shift: 34
-Classe: id | Lexema: B | Tipo: NULO
-curState: 34 push shift: 55
-Classe: OPM | Lexema: + | Tipo: NULO
-curState: 55 reduce: 21
-rule: OPRD -> id
- pop: 55 
-top: 34
-push: 54
-curState: 54 push shift: 69
-Classe: NUM | Lexema: 1 | Tipo: inteiro
-curState: 69 push shift: 56
-Classe: PT_V | Lexema: ; | Tipo: NULO
-curState: 56 reduce: 22
-rule: OPRD -> num
- pop: 56 
-top: 69
-push: 74
-curState: 74 reduce: 19
-rule: LD -> OPRD opm OPRD
- pop: 74  pop: 69  pop: 54 
-top: 34
-push: 53
-curState: 53 push shift: 68
-Classe: fimrepita | Lexema: fimrepita | Tipo: fimrepita
-curState: 68 reduce: 18
-rule: CMD -> id rcb LD ptv
- pop: 68  pop: 53  pop: 34  pop: 13 
-top: 41
-push: 42
-curState: 42 push shift: 44
-Classe: escreva | Lexema: escreva | Tipo: escreva
-curState: 44 reduce: 37
-rule: CPR -> fimrepita
- pop: 44 
-top: 42
-push: 0
-curState: 0 Erro sintático: linha 29, coluna 12.
+A -> ES A
+A -> ES A
+A -> ES A
+A -> ES A
+A -> ES A
+A -> ES A
+A -> R A
+A -> CMD A
+A -> CMD A
+A -> CMD A
+A -> CMD A
+A -> CMD A
+A -> COND A
+A -> ES A
+A -> ES A
+A -> ES A
+A -> ES A
+P -> inicio V A
+
+Fim de análise.
+
+	 Tabela de símbolos:
+key[A]: Classe: id | Lexema: A | Tipo: NULO
+key[B]: Classe: id | Lexema: B | Tipo: NULO
+key[C]: Classe: id | Lexema: C | Tipo: NULO
+key[D]: Classe: id | Lexema: D | Tipo: NULO
+key[entao]: Classe: entao | Lexema: entao | Tipo: entao
+key[escreva]: Classe: escreva | Lexema: escreva | Tipo: escreva
+key[fim]: Classe: fim | Lexema: fim | Tipo: fim
+key[fimrepita]: Classe: fimrepita | Lexema: fimrepita | Tipo: fimrepita
+key[fimse]: Classe: fimse | Lexema: fimse | Tipo: fimse
+key[inicio]: Classe: inicio | Lexema: inicio | Tipo: inicio
+key[inteiro]: Classe: inteiro | Lexema: inteiro | Tipo: NULO
+key[leia]: Classe: leia | Lexema: leia | Tipo: leia
+key[literal]: Classe: literal | Lexema: literal | Tipo: NULO
+key[real]: Classe: real | Lexema: real | Tipo: NULO
+key[repita]: Classe: repita | Lexema: repita | Tipo: repita
+key[se]: Classe: se | Lexema: se | Tipo: se
+key[varfim]: Classe: varfim | Lexema: varfim | Tipo: varfim
+key[varinicio]: Classe: varinicio | Lexema: varinicio | Tipo: varinicio
