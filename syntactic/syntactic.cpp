@@ -169,7 +169,7 @@ void Syntactic::analyze() {
             if (error_stack.empty()) {
                 do {
                     tkn = lex.scanner();
-                } while (tkn.classe != Classe::Erro);
+                } while (tkn.classe == Classe::Erro);
             } else {
                 tkn = error_stack.top();
                 error_stack.pop();

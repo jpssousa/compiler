@@ -4,7 +4,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include "syntatic/syntatic.hpp"
+#include "syntactic/syntactic.hpp"
 // #include "common.hpp"
 
 using namespace std;
