@@ -28,6 +28,7 @@ token_t Lexical::querySymbolTable(string key) {
 
 void Lexical::updateEntrySymbolTable(token_t token) {
     insertSymbolTable(token);
+    // symbol_table[token.lexema] = token;
 }
 
 Lexical::Lexical(string file_path) {

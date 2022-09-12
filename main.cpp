@@ -59,7 +59,7 @@ int main(int argc, char* argv[]) {
 
     // lex.printSymbolTable();
 
-    Syntactic syntactic(source_file);
+    Syntactic syntactic(source_file, output_file);
     syntactic.analyze();
 
     return 0;

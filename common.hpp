@@ -2,6 +2,7 @@
 #define COMMON_HPP
 
 #include <set>
+#include <vector>
 #include <string>
 
 using namespace std;
@@ -53,6 +54,15 @@ enum Tipo {
     NULO,
     EoF,
 };
+
+typedef struct {
+    string rule;
+    string alpha;
+    vector<string> beta;
+    int rhs_size;
+} rule_t;
+
+bool operator==(rule_t a, rule_t b);
 
 // função para mapear Enum Classe para string (saída)
 char const * classeToStr(Classe cl);

@@ -11,6 +11,7 @@
 
 #include "../common.hpp"
 #include "../lexical/lexical.hpp"
+#include "../semantic/semantic.hpp"
 
 using namespace std;
 
@@ -21,13 +22,6 @@ enum Action {
     error
 };
 
-typedef struct {
-    string rule;
-    string alpha;
-    vector<string> beta;
-    int rhs_size;
-} rule_t;
-
 class Syntactic {
 public:
     stack<int> st;
@@ -36,9 +30,12 @@ public:
     vector<map<string,int>> gotos;
     vector<rule_t> rules;
     // vector<pair<string, int>> rules;
-    string file_path;
+    string source_file_path;
+    string object_file_path;
+    // Lexical *lex;
+    // Semantic *sem;
 
-    Syntactic(string source_file);
+    Syntactic(string source_file, string output_file);
 
     void analyze();
 

@@ -4,10 +4,11 @@ string ACTIONS_FILE_NAME = "./files/actions.csv";
 string GOTO_FILE_NAME = "./files/gotos.csv";
 string RULES_FILE_NAME = "./files/rules.txt";
 
-Syntactic::Syntactic(string source_file) {
+Syntactic::Syntactic(string source_file, string output_file) {
     initalState = 0;
     st.push(initalState);
-    file_path = source_file;
+    source_file_path = source_file;
+    object_file_path = output_file;
     actions = buildActionTable();
     gotos = buildGotoTable();
     rules = buildRules();
@@ -144,19 +145,19 @@ vector<string> Syntactic::split (string s, string delimiter) {
 
 
 void Syntactic::analyze() {
+    bool found_errors = false;
     stack<token_t> error_stack;
-    // for (int i = 0; i < gotos.size(); i++) {
-    //     printf("S %2d:", i);
-    //     for (auto entry: gotos[i]) {
-    //         printf(" (%s %2d)", entry.first.c_str(), entry.second);
-    //     }
-    //     printf("\n");
-    // }
 
-    Lexical lex(file_path);
+    Lexical lex(source_file_path);
+    Semantic sem(object_file_path, rules);
     token tkn;
+    // token tkn = {Classe::Id, "A", Tipo::LITERAL};
+    // lex.updateEntrySymbolTable(tkn);
+    // sem.createObjectFile();
 
     tkn = lex.scanner();
+    sem.lookahead = tkn;
+    // sem.shiftToken(tkn);
     // tkn.print();
     while (1) {
         currState = st.top();
@@ -164,12 +165,15 @@ void Syntactic::analyze() {
 
         pair<Action, int> currAction = actions[currState][tkn.classe];
         if (currAction.first == Action::shift) {
-            // printf("push shift: %d\n", currAction.second);
             st.push(currAction.second);
             if (error_stack.empty()) {
                 do {
                     tkn = lex.scanner();
+                    if (tkn.classe == Classe::Erro) {
+                        found_errors = true;
+                    }
                 } while (tkn.classe == Classe::Erro);
+                sem.shiftToken(tkn);
             } else {
                 tkn = error_stack.top();
                 error_stack.pop();
@@ -178,22 +182,21 @@ void Syntactic::analyze() {
             continue;
         }
         else if (currAction.first == Action::reduce) {
-            // printf("reduce: %d\n", currAction.second);
-            // printf("rule: %s\n", rules[currAction.second].rule.c_str());
             printf("%s\n", rules[currAction.second].rule.c_str());
             for (int i = 0; i < rules[currAction.second].rhs_size; i++) {
-                // printf(" pop: %d ", st.top());
                 st.pop();
             }
             int t = st.top();
-            // printf("\ntop: %d\n", t);
-            // printf("push: %d\n", gotos[t][rules[currAction.second].alpha]);
             st.push(gotos[t][rules[currAction.second].alpha]);
+            if (!sem.applyRule(&lex, rules[currAction.second])) {
+                found_errors = true;
+            }
         }
         else if (currAction.first == Action::accept) {
             printf("\nFim de análise.\n");
             break;
         } else {
+            found_errors = true;
             printf("Erro sintático: linha %d, coluna %ld.\n",
                 lex.line, (long long)(lex.column - tkn.lexema.size()) < 0 ? 0 : lex.column - tkn.lexema.size());
             printf("Token lido: ");
@@ -224,8 +227,8 @@ void Syntactic::analyze() {
             } else {
                 do {
                     tkn = lex.scanner();
-                    // tkn.print();
                 } while (tkn.classe != Classe::Eof && !tokenToRead.count(tkn.classe));
+                sem.shiftToken(tkn);
 
                 if (tkn.classe == Classe::Eof) {
                     printf("\nFim de análise.\n");
@@ -236,5 +239,7 @@ void Syntactic::analyze() {
         }
     }
 
-    lex.printSymbolTable();
+    sem.printSymbolTable();
+
+    printf("\n\n%s\n", sem.object_file_text.c_str());
 }

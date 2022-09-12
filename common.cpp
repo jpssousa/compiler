@@ -61,6 +61,24 @@ void token::print() {
         classeToStr(classe), (*this).lexema.c_str(), tipoToStr(tipo));
 }
 
+bool operator==(rule_t a, rule_t b) {
+    bool alphaIsEqual = !(a.alpha.compare(b.alpha));
+    bool betaIsEqual = true;
+
+    if (a.rhs_size == b.rhs_size) {
+        for (int i = 0; i < a.rhs_size; i++) {
+            if (a.beta[i].compare(b.beta[i]) != 0) {
+                betaIsEqual = false;
+                break;
+            }
+        }
+    } else {
+        betaIsEqual = false;
+    }
+
+    return alphaIsEqual && betaIsEqual;
+}
+
 CTE::CTE() {
     alphabet = {EOF};
     whitespace = {' ','\t','\n'};
