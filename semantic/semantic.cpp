@@ -8,16 +8,7 @@ Semantic::Semantic(string object_file, vector<rule_t> rules) {
 
     object_file_text = "#include <stdio.h>\n\n";
     object_file_text += "typedef char literal[256];\n\n";
-    object_file_text += "void main (void) {\n\t";
-}
-
-string Semantic::codeGen(string text) {
-    string lib = "#include <stdio.h>\n\n";
-    string tpdf = "typedef char literal[256];\n\n";
-    string mainf = "void main (void) {\n\t";
-
-    string endB = "\n}\n";
-    return lib + tpdf + mainf + text + endB;
+    object_file_text += "int main (void) {\n\t";
 }
 
 void Semantic::newLineObjectText() {
@@ -28,7 +19,7 @@ void Semantic::newLineObjectText() {
 }
 
 void Semantic::shiftToken(token_t tkn) {
-    tkn.print();
+    // tkn.print();
     token_stack.push(lookahead);
     lookahead = tkn;
     if (token_stack.top().classe == Classe::Inteiro) {
@@ -38,10 +29,10 @@ void Semantic::shiftToken(token_t tkn) {
     } else if (token_stack.top().classe == Classe::Literal) {
         tipo_aux = Tipo::LITERAL;
     }
-    
+
     if (tkn.classe == Classe::Id) {
         localIdList.push_back(tkn.lexema);
-        printf("localId: %s\n", tkn.lexema.c_str());
+        // printf("localId: %s\n", tkn.lexema.c_str());
         if (symbol_table.count(tkn.lexema)) {
             token_t t = querySymbolTable(tkn.lexema);
             if (t.tipo == Tipo::NULO && !id_declared[t.lexema]) {
@@ -56,122 +47,296 @@ void Semantic::shiftToken(token_t tkn) {
 }
 
 bool Semantic::applyRule(Lexical *lex, rule_t rule) {
+    vector<token_t> rhsTokens;
+    token_t aux;
     updateSemanticSymbolTable(lex->symbol_table);
-    vector<token_t> rhsTokens(rule.rhs_size);
-    // for (int i = 0; i < rule.rhs_size; i++) {
-    //     rhsTokens[i] = token_stack.top();
-    //     token_stack.pop();
-    // }
-    token_stack.push({Classe::Erro, "reduction placeholder", Tipo::NULO});
-
     int rIdx = find(rule);
     bool flag = true;
 
     switch (rIdx) {
-        case 5:
-            for (int i = 0; i < localIdList.size(); i++) {
-                if (!id_declared[localIdList[i]]) {
-                    id_declared[localIdList[i]] = true;
-                    if (i != 0) object_file_text += ", ";
-                    object_file_text += localIdList[i];
-                }
-                else {
-                    printf("Erro semântico: linha %d, coluna %ld\n", lex->line, lex->column - lookahead.lexema.size());
-                    printf("Variável [%s] já declarada.\n", localIdList[i].c_str());
-                    flag = false;
-                    break;
-                }
+    // D -> TIPO L ptv
+    case 5:
+        for (int i = 0; i < localIdList.size(); i++) {
+            if (!id_declared[localIdList[i]]) {
+                id_declared[localIdList[i]] = true;
+                if (i != 0) object_file_text += ", ";
+                object_file_text += localIdList[i];
             }
-            localIdList.clear();
-            object_file_text += ";";
-            newLineObjectText();
-            printf("\n\n rule 5\n");
-            printSymbolTable();
-            return flag;
+            else {
+                printf("Erro semântico: linha %d, coluna %ld\n", lex->line, lex->column - lookahead.lexema.size());
+                printf("Variável [%s] já declarada.\n", localIdList[i].c_str());
+                flag = false;
+                break;
+            }
+        }
+        localIdList.clear();
+        object_file_text += ";";
+        newLineObjectText();
+        tipo_aux = Tipo::NULO;
+        return flag;
+    
+    // TIPO -> inteiro
+    case 8:
+        object_file_text += "int ";
+    break;
 
+    // TIPO -> real
+    case 9:
+        object_file_text += "double ";
+    break;
 
+    // TIPO -> literal
+    case 10:
+        object_file_text += "literal ";
+    break;
 
-            // for (int i = 0; i < localIdList.size(); i++) {
-            //     if (symbol_table.count(localIdList[i])) {
-
-            //     }
-            // }
-
-
-            // printf("before\n");
-            // printSymbolTable();
-            // for (int i = 0; i < localIdList.size(); i++) {
-            //     if (symbol_table.count(localIdList[i])) {
-            //         if (querySymbolTable(localIdList[i]).tipo == Tipo::NULO) {
-            //             updateEntrySymbolTable({Classe::Id, localIdList[i], tipo_aux});
-            //             if (i != 0) object_file_text += ", ";
-            //             object_file_text += localIdList[i];
-            //         } else {
-            //             printf("Erro semântico: linha %d, coluna %d\n", lex->line, lex->column);
-            //             printf("Variável já declarada.\n");
-            //             return false;
-            //         }
-            //     } else {
-            //         printf("else\n");
-            //     }
-            // }
-            // object_file_text += ";\n";
-            // localIdList.clear();
-            // printf("after\n");
-            // printSymbolTable();
-
-
-            // for (int i = 0; i < localIdList.size(); i++) {
-            //     if (symbol_table.count(localIdList[i]) &&
-            //     symbol_table[localIdList[i]].tipo != Tipo::NULO) {
-            //         printf("Erro semântico: linha %d, coluna %d\n", lex->line, lex->column);
-            //         printf("Variável já declarada.\n");
-            //         return false;
-            //     }
-            // }
-            // object_file_text += localIdList[0];
-            // updateEntrySymbolTable({Classe::Id, localIdList[0], tipo_aux});
-            // for (int i = 1; i < localIdList.size(); i++) {
-            //     object_file_text += ", " + localIdList[i];
-            //     updateEntrySymbolTable({Classe::Id, localIdList[i], tipo_aux});
-            // }
-            // object_file_text += ";\n";
-            // localIdList.clear();
+    // ES -> leia id ptv
+    case 12:
+        rhsTokens = getRhsTokens(rule.rhs_size);
+        aux = querySymbolTable(rhsTokens[1].lexema);
+        if (aux.tipo != Tipo::NULO) {
+            string sc = "scanf(\"%";
+            switch(aux.tipo) {
+            case Tipo::INTEIRO:
+                sc += "d\", &";
             break;
+            case Tipo::REAL:
+                sc += "lf\", &";
+            break;
+            case Tipo::LITERAL:
+                sc += "s\", ";
+            break;
+            default:
+                flag = false;
+            }
+            object_file_text += sc + string(aux.lexema) + ");";
+        }
+        else {
+            printf("Erro semântico: linha %d, coluna %ld\n", lex->line, lex->column - lookahead.lexema.size());
+            printf("Variável [%s] não declarada.\n", rhsTokens[1].lexema.c_str());
+            flag = false;
+        }
+        newLineObjectText();
+    break;
+    
+    // ES -> escreva ARG ptv
+    case 13:
+        object_file_text += "printf(" + ARG + ");";
+        newLineObjectText();
+    break;
 
-        case 6:
-            // for (int i = 0; i < localIdList.size(); i++) {
-            //     if (symbol_table.count(localIdList[i]) &&
-            //     symbol_table[localIdList[i]].tipo != Tipo::NULO) {
-            //         printf("Erro semântico: linha %d, coluna %d\n", lex->line, lex->column);
-            //         printf("Variável já declarada.\n");
-            //         return false;
-            //     }
-            // }
+    // ARG -> lit
+    case 14:
+        rhsTokens = getRhsTokens(1);
+        ARG = rhsTokens[0].lexema;
+    break;
+
+    // ARG -> num
+    case 15:
+        rhsTokens = getRhsTokens(1);
+        ARG = rhsTokens[0].lexema;
+    break;
+    
+    // ARG -> id
+    case 16:
+        rhsTokens = getRhsTokens(1);
+        aux = querySymbolTable(rhsTokens[0].lexema);
+        if (aux.tipo != Tipo::NULO) {
+            switch(aux.tipo) {
+            case Tipo::INTEIRO:
+                ARG = "\"%d\", " + aux.lexema;
             break;
-        case 7:
-            // for (int i = 0; i < localIdList.size(); i++) {
-            //     if (symbol_table.count(localIdList[i]) &&
-            //     symbol_table[localIdList[i]].tipo != Tipo::NULO) {
-            //         printf("Erro semântico: linha %d, coluna %d\n", lex->line, lex->column);
-            //         printf("Variável já declarada.\n");
-            //         return false;
-            //     }
-            // }
+            case Tipo::REAL:
+                ARG = "\"%lf\", " + aux.lexema;
             break;
-        case 8:
-            object_file_text += "int ";
+            case Tipo::LITERAL:
+                ARG = "\"%s\", " + aux.lexema;
             break;
-        case 9:
-            object_file_text += "double ";
-            break;
-        case 10:
-            object_file_text += "literal ";
-            break;
-        default:
-            printf("No rule to be applied.\n");
+            default:
+                flag = false;
+            }
+        }
+        else {
+            printf("Erro semântico: linha %d, coluna %ld\n", lex->line, lex->column - lookahead.lexema.size());
+            printf("Variável [%s] não declarada.\n", rhsTokens.back().lexema.c_str());
+            flag = false;
+        }
+    break;
+
+    // CMD -> id rcb LD ptv
+    case 18:
+        rhsTokens = getRhsTokens(3 + LD.size());
+        aux = querySymbolTable(rhsTokens[0].lexema);
+        if (aux.tipo != Tipo::NULO) {
+            if (aux.tipo == LD[0].tipo || (aux.tipo == Tipo::REAL && LD[0].tipo == Tipo::INTEIRO)) {
+                object_file_text += aux.lexema + " =";
+                for (int i = 0; i < LD.size(); i++) {
+                    if (LD[i].lexema == "<>") {
+                        object_file_text += " !=";
+                    } else {
+                        object_file_text += " " + LD[i].lexema;
+                    }
+                }
+                object_file_text += ";";
+                newLineObjectText();
+            } else {
+                printf("Erro semântico: linha %d, coluna %ld\n", lex->line, lex->column - lookahead.lexema.size());
+                printf("Tipos diferentes para atribuição.\n");
+                flag = false;
+            }
+        }
+        else {
+            printf("Erro semântico: linha %d, coluna %ld\n", lex->line, lex->column - lookahead.lexema.size());
+            printf("Variável [%s] não declarada.\n", rhsTokens[0].lexema.c_str());
+            flag = false;
+        }
+        LD.clear();
+    break;
+
+    // LD -> OPRD opm OPRD
+    case 19:
+        rhsTokens = getRhsTokens(3);
+        if (rhsTokens[0].tipo == rhsTokens[2].tipo &&
+        rhsTokens[0].tipo != Tipo::LITERAL) {
+            LD = rhsTokens;
+        } else {
+            printf("Erro semântico: linha %d, coluna %ld\n", lex->line, lex->column - lookahead.lexema.size());
+            printf("Operando de tipos incompatíveis.\n");
+            flag = false;
+        }
+        OPRD.clear();
+    break;
+
+    // LD -> OPRD
+    case 20:
+        LD = OPRD;
+        OPRD.clear();
+        // LD[0].print();
+    break;
+
+    // OPRD -> id
+    case 21:
+        rhsTokens = getRhsTokens(1);
+        aux = querySymbolTable(rhsTokens[0].lexema);
+        if (aux.tipo != Tipo::NULO) {
+            OPRD.push_back(rhsTokens[0]);
+        }
+        else {
+            printf("Erro semântico: linha %d, coluna %ld\n", lex->line, lex->column - lookahead.lexema.size());
+            printf("Variável [%s] não declarada.\n", rhsTokens.back().lexema.c_str());
+            flag = false;
+        }
+    break;
+
+    // OPRD -> num
+    case 22:
+        rhsTokens = getRhsTokens(1);
+        // rhsTokens[0].print();
+        OPRD.push_back(rhsTokens[0]);
+    break;
+
+    // COND -> CAB CP
+    case 24:
+        identation--;
+        newLineObjectText();
+        object_file_text += "}";
+        newLineObjectText();
+    break;
+    
+
+    // CAB -> se abp EXP_R fcp entao
+    case 25:
+        object_file_text += "if (";
+        for (int i = 0; i < EXP_R.size(); i++) {
+            if (EXP_R[i].lexema == "=") {
+                object_file_text += " ==";
+            }
+            else {
+                object_file_text += " " + EXP_R[i].lexema;
+            }
+        }
+        object_file_text += " ) {";
+        identation++;
+        newLineObjectText();
+        EXP_R.clear();
+    break;
+
+
+    // EXP_R -> OPRD opr OPRD
+    case 26:
+        if (OPRD.size() == 2) {
+            if (OPRD[0].tipo == OPRD[1].tipo) {
+                rhsTokens = getRhsTokens(rule.rhs_size);
+                EXP_R = rhsTokens;
+                OPRD.clear();
+            }
+            else {
+                printf("Erro semântico: linha %d, coluna %ld\n", lex->line, lex->column - lookahead.lexema.size());
+                printf("Operando de tipos incompatíveis.\n");
+                flag = false;
+            }
+        }
+    break;
+    
+    // R -> CABR CPR
+    case 32:
+        identation--;
+        newLineObjectText();
+        object_file_text += "}";
+        newLineObjectText();
+    break;
+
+    // CABR -> repita abp EXP_R fcp entao
+    case 33:
+        object_file_text += "while (";
+        for (int i = 0; i < EXP_R.size(); i++) {
+            if (EXP_R[i].lexema == "=") {
+                object_file_text += " ==";
+            }
+            else {
+                object_file_text += " " + EXP_R[i].lexema;
+            }
+        }
+        object_file_text += " ) {";
+        identation++;
+        newLineObjectText();
+        EXP_R.clear();
+    break;
+
+    case 38:
+        newLineObjectText();
+        object_file_text += "return 0;";
+        identation--;
+        newLineObjectText();
+        object_file_text += "}\n";
+    break;
+
+    default:
+        return flag;
+        // printf("No rule to be applied.\n");
     }
     return true;
+}
+
+vector<token_t> Semantic::getRhsTokens(int n) {
+    vector<token_t> rhsTokens(n);
+    for (int i = n-1; i >= 0; i--) {
+        token_t t = token_stack.top();
+        if (t.classe == Classe::Id) {
+            rhsTokens[i] = querySymbolTable(t.lexema);
+        }
+        else {
+            rhsTokens[i] = t;
+        }
+
+        token_stack.pop();
+    }
+
+    for (int i = 0; i < n; i++) {
+        token_stack.push(rhsTokens[i]);
+    }
+
+    return rhsTokens;
 }
 
 
@@ -185,8 +350,9 @@ int Semantic::find(rule_t rule) {
 void Semantic::createObjectFile() {
     fstream fp;
     fp.open(object_file_path, fstream::out);
-    string text = codeGen("printf(\"Hello world.\\n\");");
-    fp.write(text.c_str(), text.size());
+    fp.write(object_file_text.c_str(), object_file_text.size());
+    // string text = codeGen("printf(\"Hello world.\\n\");");
+    // fp.write(text.c_str(), text.size());
 
     fp.close();
 }
@@ -198,7 +364,12 @@ void Semantic::insertSymbolTable(token_t token) {
 }
 
 token_t Semantic::querySymbolTable(string key) {
-    return symbol_table[key];
+    if (symbol_table.count(key)) {
+        return symbol_table[key];
+    }
+    else {
+        return {Classe::Id, key, Tipo::NULO};
+    }
 }
 
 void Semantic::updateEntrySymbolTable(token_t token) {

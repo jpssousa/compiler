@@ -7,6 +7,8 @@
 #include <vector>
 #include <string>
 #include <fstream>
+#include <utility>
+#include <algorithm>
 
 #include "../lexical/lexical.hpp"
 #include "../common.hpp"
@@ -39,6 +41,12 @@ public:
     // token lookaead (abstração)
     token_t lookahead;
 
+    // atributos de regras específicas
+    string ARG;
+    vector<token_t> LD;
+    vector<token_t> OPRD;
+    vector<token_t> EXP_R;
+
     // tabela de símbolos
     map<string, token_t> symbol_table;
 
@@ -54,10 +62,10 @@ public:
     // aplica regra semântica
     bool applyRule(Lexical *lex, rule_t rule);
 
-    string codeGen(string text);
-
+    // imprime nova linha no arquivo objeto, ajustando a identação
     void newLineObjectText();
 
+    // cria arquivo objeto
     void createObjectFile();
 
     // retorna índice da regra aplicada
@@ -77,6 +85,8 @@ public:
 
     // atualização da tabela de símbolos do semântico
     void updateSemanticSymbolTable(map<string, token_t> st);
+
+    vector<token_t> getRhsTokens(int n);
 };
 
 #endif

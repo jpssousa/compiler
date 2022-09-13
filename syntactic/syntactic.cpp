@@ -182,7 +182,7 @@ void Syntactic::analyze() {
             continue;
         }
         else if (currAction.first == Action::reduce) {
-            printf("%s\n", rules[currAction.second].rule.c_str());
+            // printf("%s\n", rules[currAction.second].rule.c_str());
             for (int i = 0; i < rules[currAction.second].rhs_size; i++) {
                 st.pop();
             }
@@ -194,6 +194,9 @@ void Syntactic::analyze() {
         }
         else if (currAction.first == Action::accept) {
             printf("\nFim de análise.\n");
+            if (!found_errors) {
+                sem.createObjectFile();
+            }
             break;
         } else {
             found_errors = true;

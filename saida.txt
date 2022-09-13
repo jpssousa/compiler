@@ -1,121 +1,12 @@
-No object target file provided. Writing on 'alg.c'
-TIPO -> literal
-L -> id
-L -> id vir L
-D -> TIPO L ptv
-TIPO -> inteiro
-L -> id
-D -> TIPO L ptv
-TIPO -> inteiro
-L -> id
-D -> TIPO L ptv
-TIPO -> real
-L -> id
-D -> TIPO L ptv
-LV -> varfim ptv
-LV -> D LV
-LV -> D LV
-LV -> D LV
-LV -> D LV
-V -> varinicio LV
-ARG -> lit
-ES -> escreva ARG ptv
-ES -> leia id ptv
-ARG -> lit
-ES -> escreva ARG ptv
-ES -> leia id ptv
-OPRD -> id
-OPRD -> num
-EXP_R -> OPRD opr OPRD
-CAB -> se abp EXP_R fcp entao
-OPRD -> id
-OPRD -> num
-EXP_R -> OPRD opr OPRD
-CAB -> se abp EXP_R fcp entao
-ARG -> lit
-ES -> escreva ARG ptv
-CP -> fimse
-CP -> ES CP
-COND -> CAB CP
-CP -> fimse
-CP -> COND CP
-COND -> CAB CP
-OPRD -> id
-OPRD -> num
-LD -> OPRD opm OPRD
-CMD -> id rcb LD ptv
-OPRD -> id
-OPRD -> num
-LD -> OPRD opm OPRD
-CMD -> id rcb LD ptv
-OPRD -> id
-OPRD -> num
-LD -> OPRD opm OPRD
-CMD -> id rcb LD ptv
-OPRD -> id
-LD -> OPRD
-CMD -> id rcb LD ptv
-OPRD -> num
-LD -> OPRD
-CMD -> id rcb LD ptv
-OPRD -> id
-OPRD -> num
-EXP_R -> OPRD opr OPRD
-CABR -> repita abp EXP_R fcp
-OPRD -> id
-OPRD -> num
-LD -> OPRD opm OPRD
-CMD -> id rcb LD ptv
-ARG -> id
-ES -> escreva ARG ptv
-OPRD -> id
-OPRD -> num
-LD -> OPRD opm OPRD
-CMD -> id rcb LD ptv
-CPR -> fimrepita
-CPR -> CMD CPR
-CPR -> ES CPR
-CPR -> CMD CPR
-R -> CABR CPR
-ARG -> lit
-ES -> escreva ARG ptv
-ARG -> id
-ES -> escreva ARG ptv
-ARG -> lit
-ES -> escreva ARG ptv
-ARG -> id
-ES -> escreva ARG ptv
-ARG -> lit
-ES -> escreva ARG ptv
-ARG -> id
-ES -> escreva ARG ptv
-A -> fim
-A -> ES A
-A -> ES A
-A -> ES A
-A -> ES A
-A -> ES A
-A -> ES A
-A -> R A
-A -> CMD A
-A -> CMD A
-A -> CMD A
-A -> CMD A
-A -> CMD A
-A -> COND A
-A -> ES A
-A -> ES A
-A -> ES A
-A -> ES A
-P -> inicio V A
+Object file provided. Writing on 'programa.c'
 
 Fim de análise.
 
 	 Tabela de símbolos:
-key[A]: Classe: id | Lexema: A | Tipo: NULO
-key[B]: Classe: id | Lexema: B | Tipo: NULO
-key[C]: Classe: id | Lexema: C | Tipo: NULO
-key[D]: Classe: id | Lexema: D | Tipo: NULO
+key[A]: Classe: id | Lexema: A | Tipo: literal
+key[B]: Classe: id | Lexema: B | Tipo: inteiro
+key[C]: Classe: id | Lexema: C | Tipo: real
+key[D]: Classe: id | Lexema: D | Tipo: inteiro
 key[entao]: Classe: entao | Lexema: entao | Tipo: entao
 key[escreva]: Classe: escreva | Lexema: escreva | Tipo: escreva
 key[fim]: Classe: fim | Lexema: fim | Tipo: fim
@@ -130,3 +21,46 @@ key[repita]: Classe: repita | Lexema: repita | Tipo: repita
 key[se]: Classe: se | Lexema: se | Tipo: se
 key[varfim]: Classe: varfim | Lexema: varfim | Tipo: varfim
 key[varinicio]: Classe: varinicio | Lexema: varinicio | Tipo: varinicio
+
+
+#include <stdio.h>
+
+typedef char literal[256];
+
+int main (void) {
+	literal A;
+	int B;
+	int D;
+	double C;
+	printf("Digite B:");
+	scanf("%d", &B);
+	printf("Digite A:");
+	scanf("%s", A);
+	if ( B > 2 ) {
+		if ( B <= 4 ) {
+			printf("B esta entre 2 e 4");
+			
+		}
+		
+	}
+	B = B + 1;
+	B = B + 2;
+	B = B + 3;
+	D = B;
+	C = 5.0;
+	while ( B < 5 ) {
+		C = B + 2;
+		printf("%lf", C);
+		B = B + 1;
+		
+	}
+	printf("\nB=\n");
+	printf("%d", D);
+	printf("\n");
+	printf("%lf", C);
+	printf("\n");
+	printf("%s", A);
+	
+	return 0;
+}
+
